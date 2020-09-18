@@ -1,0 +1,13 @@
+D:\source\task2. Cs basic\task2. Cs basic\bin\Debug\netcoreapp3.1\task2. Cs basic.exe
+D:\source\task2. Cs basic\task2. Cs basic\bin\Debug\netcoreapp3.1\task2. Cs basic.deps.json
+D:\source\task2. Cs basic\task2. Cs basic\bin\Debug\netcoreapp3.1\task2. Cs basic.runtimeconfig.json
+D:\source\task2. Cs basic\task2. Cs basic\bin\Debug\netcoreapp3.1\task2. Cs basic.runtimeconfig.dev.json
+D:\source\task2. Cs basic\task2. Cs basic\bin\Debug\netcoreapp3.1\task2. Cs basic.dll
+D:\source\task2. Cs basic\task2. Cs basic\bin\Debug\netcoreapp3.1\task2. Cs basic.pdb
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.csprojAssemblyReference.cache
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.AssemblyInfoInputs.cache
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.AssemblyInfo.cs
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.csproj.CoreCompileInputs.cache
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.dll
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.pdb
+D:\source\task2. Cs basic\task2. Cs basic\obj\Debug\netcoreapp3.1\task2. Cs basic.genruntimeconfig.cache

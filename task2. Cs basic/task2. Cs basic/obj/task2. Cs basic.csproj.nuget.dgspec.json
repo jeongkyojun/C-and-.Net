@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\C#\\task1. HelloWorld\\task1. HelloWorld\\task1. HelloWorld.csproj": {}
+    "D:\\source\\task2. Cs basic\\task2. Cs basic\\task2. Cs basic.csproj": {}
   },
   "projects": {
-    "D:\\Git\\C#\\task1. HelloWorld\\task1. HelloWorld\\task1. HelloWorld.csproj": {
+    "D:\\source\\task2. Cs basic\\task2. Cs basic\\task2. Cs basic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\C#\\task1. HelloWorld\\task1. HelloWorld\\task1. HelloWorld.csproj",
-        "projectName": "task1. HelloWorld",
-        "projectPath": "D:\\Git\\C#\\task1. HelloWorld\\task1. HelloWorld\\task1. HelloWorld.csproj",
+        "projectUniqueName": "D:\\source\\task2. Cs basic\\task2. Cs basic\\task2. Cs basic.csproj",
+        "projectName": "task2. Cs basic",
+        "projectPath": "D:\\source\\task2. Cs basic\\task2. Cs basic\\task2. Cs basic.csproj",
         "packagesPath": "C:\\Users\\kyoju\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\C#\\task1. HelloWorld\\task1. HelloWorld\\obj\\",
+        "outputPath": "D:\\source\\task2. Cs basic\\task2. Cs basic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

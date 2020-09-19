@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\C#\\task2. Cs basic\\task2. Cs basic\\task2. Cs basic.csproj",
-      "projectName": "task2. Cs basic",
-      "projectPath": "D:\\Git\\C#\\task2. Cs basic\\task2. Cs basic\\task2. Cs basic.csproj",
+      "projectUniqueName": "D:\\source\\task3. Cs basic2\\task3. Cs basic2\\task3. Cs basic2.csproj",
+      "projectName": "task3. Cs basic2",
+      "projectPath": "D:\\source\\task3. Cs basic2\\task3. Cs basic2\\task3. Cs basic2.csproj",
       "packagesPath": "C:\\Users\\kyoju\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\C#\\task2. Cs basic\\task2. Cs basic\\obj\\",
+      "outputPath": "D:\\source\\task3. Cs basic2\\task3. Cs basic2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

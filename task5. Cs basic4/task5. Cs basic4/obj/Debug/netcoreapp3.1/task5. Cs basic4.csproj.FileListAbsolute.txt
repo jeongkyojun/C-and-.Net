@@ -1,0 +1,13 @@
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\bin\Debug\netcoreapp3.1\task5. Cs basic4.exe
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\bin\Debug\netcoreapp3.1\task5. Cs basic4.deps.json
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\bin\Debug\netcoreapp3.1\task5. Cs basic4.runtimeconfig.json
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\bin\Debug\netcoreapp3.1\task5. Cs basic4.runtimeconfig.dev.json
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\bin\Debug\netcoreapp3.1\task5. Cs basic4.dll
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\bin\Debug\netcoreapp3.1\task5. Cs basic4.pdb
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.csprojAssemblyReference.cache
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.AssemblyInfoInputs.cache
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.AssemblyInfo.cs
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.csproj.CoreCompileInputs.cache
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.dll
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.pdb
+D:\Git\C#\task5. Cs basic4\task5. Cs basic4\obj\Debug\netcoreapp3.1\task5. Cs basic4.genruntimeconfig.cache

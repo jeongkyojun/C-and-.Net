@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\C#\\task4. Cs basic3\\task4. Cs basic3\\task4. Cs basic3.csproj": {}
+    "D:\\Git\\C#\\task5. Cs basic4\\task5. Cs basic4\\task5. Cs basic4.csproj": {}
   },
   "projects": {
-    "D:\\Git\\C#\\task4. Cs basic3\\task4. Cs basic3\\task4. Cs basic3.csproj": {
+    "D:\\Git\\C#\\task5. Cs basic4\\task5. Cs basic4\\task5. Cs basic4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\C#\\task4. Cs basic3\\task4. Cs basic3\\task4. Cs basic3.csproj",
-        "projectName": "task4. Cs basic3",
-        "projectPath": "D:\\Git\\C#\\task4. Cs basic3\\task4. Cs basic3\\task4. Cs basic3.csproj",
+        "projectUniqueName": "D:\\Git\\C#\\task5. Cs basic4\\task5. Cs basic4\\task5. Cs basic4.csproj",
+        "projectName": "task5. Cs basic4",
+        "projectPath": "D:\\Git\\C#\\task5. Cs basic4\\task5. Cs basic4\\task5. Cs basic4.csproj",
         "packagesPath": "C:\\Users\\kyoju\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\C#\\task4. Cs basic3\\task4. Cs basic3\\obj\\",
+        "outputPath": "D:\\Git\\C#\\task5. Cs basic4\\task5. Cs basic4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

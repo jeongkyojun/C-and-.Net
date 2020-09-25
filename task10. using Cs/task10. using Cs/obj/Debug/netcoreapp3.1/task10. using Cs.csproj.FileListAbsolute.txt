@@ -1,0 +1,13 @@
+D:\Git\C#\task10. using Cs\task10. using Cs\bin\Debug\netcoreapp3.1\task10. using Cs.exe
+D:\Git\C#\task10. using Cs\task10. using Cs\bin\Debug\netcoreapp3.1\task10. using Cs.deps.json
+D:\Git\C#\task10. using Cs\task10. using Cs\bin\Debug\netcoreapp3.1\task10. using Cs.runtimeconfig.json
+D:\Git\C#\task10. using Cs\task10. using Cs\bin\Debug\netcoreapp3.1\task10. using Cs.runtimeconfig.dev.json
+D:\Git\C#\task10. using Cs\task10. using Cs\bin\Debug\netcoreapp3.1\task10. using Cs.dll
+D:\Git\C#\task10. using Cs\task10. using Cs\bin\Debug\netcoreapp3.1\task10. using Cs.pdb
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.csprojAssemblyReference.cache
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.AssemblyInfoInputs.cache
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.AssemblyInfo.cs
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.csproj.CoreCompileInputs.cache
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.dll
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.pdb
+D:\Git\C#\task10. using Cs\task10. using Cs\obj\Debug\netcoreapp3.1\task10. using Cs.genruntimeconfig.cache

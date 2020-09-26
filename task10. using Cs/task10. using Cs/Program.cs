@@ -7,7 +7,7 @@ using System.Collections.Generic;   // 제네릭 클래스 컬렉션 사용
 using System.Data;
 /*
 * 
-* C# 프로그래밍 9일차 3단원 C# 활용 : 28강 ~ 
+* C# 프로그래밍 9일차 3단원 C# 활용 : 28강 ~ 29강
 * Copyright 2020. Jeong kyojun, All pictures cannot be copied without permission.
 *
 */

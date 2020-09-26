@@ -1,0 +1,13 @@
+D:\Git\C#\task11. using Cs\task11. using Cs\bin\Debug\netcoreapp3.1\task11. using Cs.exe
+D:\Git\C#\task11. using Cs\task11. using Cs\bin\Debug\netcoreapp3.1\task11. using Cs.deps.json
+D:\Git\C#\task11. using Cs\task11. using Cs\bin\Debug\netcoreapp3.1\task11. using Cs.runtimeconfig.json
+D:\Git\C#\task11. using Cs\task11. using Cs\bin\Debug\netcoreapp3.1\task11. using Cs.runtimeconfig.dev.json
+D:\Git\C#\task11. using Cs\task11. using Cs\bin\Debug\netcoreapp3.1\task11. using Cs.dll
+D:\Git\C#\task11. using Cs\task11. using Cs\bin\Debug\netcoreapp3.1\task11. using Cs.pdb
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.csprojAssemblyReference.cache
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.AssemblyInfoInputs.cache
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.AssemblyInfo.cs
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.csproj.CoreCompileInputs.cache
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.dll
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.pdb
+D:\Git\C#\task11. using Cs\task11. using Cs\obj\Debug\netcoreapp3.1\task11. using Cs.genruntimeconfig.cache

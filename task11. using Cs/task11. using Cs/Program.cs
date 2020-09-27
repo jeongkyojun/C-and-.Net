@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 /*
 * 
-* C# 프로그래밍 9일차 3단원 C# 활용 : 30강
+* C# 프로그래밍 10일차 3단원 C# 활용 : 30강
 * Copyright 2020. Jeong kyojun, All pictures cannot be copied without permission.
 *
 */

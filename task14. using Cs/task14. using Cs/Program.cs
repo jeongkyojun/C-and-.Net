@@ -3,7 +3,7 @@ using static System.Console;
 
 /*
 * 
-* C# 프로그래밍 13일차 3단원 C# 활용 : 34강 ~ 
+* C# 프로그래밍 13일차 3단원 C# 활용 : 34강 ~ 35강
 * Copyright 2020. Jeong kyojun, All pictures cannot be copied without permission.
 *
 */

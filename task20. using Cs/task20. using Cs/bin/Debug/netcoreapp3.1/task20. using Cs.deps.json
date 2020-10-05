@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "task20. using Cs/1.0.0": {
+        "runtime": {
+          "task20. using Cs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "task20. using Cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

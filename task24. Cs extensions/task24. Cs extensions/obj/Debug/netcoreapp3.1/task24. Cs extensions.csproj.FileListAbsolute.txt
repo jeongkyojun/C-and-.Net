@@ -1,0 +1,13 @@
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\bin\Debug\netcoreapp3.1\task24. Cs extensions.exe
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\bin\Debug\netcoreapp3.1\task24. Cs extensions.deps.json
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\bin\Debug\netcoreapp3.1\task24. Cs extensions.runtimeconfig.json
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\bin\Debug\netcoreapp3.1\task24. Cs extensions.runtimeconfig.dev.json
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\bin\Debug\netcoreapp3.1\task24. Cs extensions.dll
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\bin\Debug\netcoreapp3.1\task24. Cs extensions.pdb
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.csprojAssemblyReference.cache
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.AssemblyInfoInputs.cache
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.AssemblyInfo.cs
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.csproj.CoreCompileInputs.cache
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.dll
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.pdb
+D:\Git\C#\task24. Cs extensions\task24. Cs extensions\obj\Debug\netcoreapp3.1\task24. Cs extensions.genruntimeconfig.cache

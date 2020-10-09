@@ -3,7 +3,7 @@ using static System.Console;
 
 /*
 * 
-* C# 프로그래밍 21일차 4단원 C# 확장기능 : 48강 ~ 49강
+* C# 프로그래밍 21일차 4단원 C# 확장기능 : 50강
 * Copyright 2020. Jeong kyojun, All pictures cannot be copied without permission.
 *
 */

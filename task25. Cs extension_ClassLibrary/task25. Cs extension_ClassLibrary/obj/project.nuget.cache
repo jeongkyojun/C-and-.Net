@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8hl/UR7TOIY3KMZrgBENeRXYEFm1ugbZ+gGCUbqlhAbBCV0wxI12/4FVik4gjAw2bj6HL9gZMf9Vb1M/wzXtUg==",
+  "success": true,
+  "projectFilePath": "D:\\Git\\C#\\task25. Cs extension_ClassLibrary\\task25. Cs extension_ClassLibrary\\task25_Cs_extension_ClassLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kyoju\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kyoju\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.exe
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.deps.json
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.runtimeconfig.json
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.runtimeconfig.dev.json
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.dll
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.pdb
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25_Cs_extension_ClassLibrary.dll
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25_Cs_extension_ClassLibrary.pdb
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.csprojAssemblyReference.cache
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.AssemblyInfoInputs.cache
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.AssemblyInfo.cs
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.csproj.CoreCompileInputs.cache
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.csproj.CopyComplete
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.dll
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.pdb
+D:\Git\C#\task25. Cs extensions\task25. Cs extensions\obj\Debug\netcoreapp3.1\task25. Cs extensions.genruntimeconfig.cache

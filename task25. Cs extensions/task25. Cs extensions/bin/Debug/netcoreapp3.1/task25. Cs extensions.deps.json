@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "task25. Cs extensions/1.0.0": {
+        "dependencies": {
+          "task25_Cs_extension_ClassLibrary": "1.0.0.0"
+        },
+        "runtime": {
+          "task25. Cs extensions.dll": {}
+        }
+      },
+      "task25_Cs_extension_ClassLibrary/1.0.0.0": {
+        "runtime": {
+          "task25_Cs_extension_ClassLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "task25. Cs extensions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "task25_Cs_extension_ClassLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

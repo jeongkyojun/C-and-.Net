@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>task25._Cs_extensions</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="task25_Cs_extension_ClassLibrary">
+      <HintPath>..\..\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\bin\Debug\netstandard2.0\task25_Cs_extension_ClassLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

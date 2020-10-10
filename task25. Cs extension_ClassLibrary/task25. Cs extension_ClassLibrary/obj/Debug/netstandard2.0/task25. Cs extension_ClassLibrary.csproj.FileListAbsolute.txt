@@ -1,0 +1,9 @@
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\bin\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.deps.json
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\bin\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.dll
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\bin\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.pdb
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\obj\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.AssemblyInfoInputs.cache
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\obj\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.AssemblyInfo.cs
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\obj\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.csproj.CoreCompileInputs.cache
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\obj\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.dll
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\obj\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.pdb
+D:\Git\C#\task25. Cs extension_ClassLibrary\task25. Cs extension_ClassLibrary\obj\Debug\netstandard2.0\task25. Cs extension_ClassLibrary.csprojAssemblyReference.cache

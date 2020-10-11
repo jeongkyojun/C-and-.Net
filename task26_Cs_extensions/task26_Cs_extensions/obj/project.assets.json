@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\C#\\task25. Cs extensions\\task25. Cs extensions\\task25. Cs extensions.csproj",
-      "projectName": "task25_Cs_extensions_NugetExample",
-      "projectPath": "D:\\Git\\C#\\task25. Cs extensions\\task25. Cs extensions\\task25. Cs extensions.csproj",
+      "projectUniqueName": "D:\\Git\\C#\\task26_Cs_extensions\\task26_Cs_extensions\\task26_Cs_extensions.csproj",
+      "projectName": "task26_Cs_extensions",
+      "projectPath": "D:\\Git\\C#\\task26_Cs_extensions\\task26_Cs_extensions\\task26_Cs_extensions.csproj",
       "packagesPath": "C:\\Users\\kyoju\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\C#\\task25. Cs extensions\\task25. Cs extensions\\obj\\",
+      "outputPath": "D:\\Git\\C#\\task26_Cs_extensions\\task26_Cs_extensions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -67,5 +67,8 @@ namespace task25._Cs_extensions
         }
     }
 
-
+    /*
+     * day 25. 54강 NuGet 패키지
+     * NuGet 패키지를 통해 내가 만든 클래스 라이브러리를 공유할 수 있다.
+     */
 }

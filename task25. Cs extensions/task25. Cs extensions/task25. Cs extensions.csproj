@@ -4,6 +4,14 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>task25._Cs_extensions</RootNamespace>
+    <PackageId>task25_Cs_extensions_NugetExample</PackageId>
+    <Authors>Jeong kyojun</Authors>
+    <Product>task25_Cs_extensions_NugetExample</Product>
+    <Company>VisualAcademy</Company>
+    <RepositoryUrl></RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/jeongkyojun/Cs-and-.Net.git</PackageProjectUrl>
+    <PackageTags>C#, .NET Standard</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

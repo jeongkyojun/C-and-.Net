@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>task25_Cs_extensions_NugetExample</id>
+    <version>1.0.0</version>
+    <authors>Jeong kyojun</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/jeongkyojun/Cs-and-.Net.git</projectUrl>
+    <description>Package Description</description>
+    <tags>C#, .NET Standard</tags>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.runtimeconfig.json" target="lib\netcoreapp3.1\task25. Cs extensions.runtimeconfig.json" />
+    <file src="D:\Git\C#\task25. Cs extensions\task25. Cs extensions\bin\Debug\netcoreapp3.1\task25. Cs extensions.dll" target="lib\netcoreapp3.1\task25. Cs extensions.dll" />
+  </files>
+</package>

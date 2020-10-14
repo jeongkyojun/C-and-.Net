@@ -1,0 +1,9 @@
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\bin\Debug\netstandard2.0\Dul.Data.deps.json
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\bin\Debug\netstandard2.0\Dul.Data.dll
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\bin\Debug\netstandard2.0\Dul.Data.pdb
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\obj\Debug\netstandard2.0\Dul.Data.csprojAssemblyReference.cache
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\obj\Debug\netstandard2.0\Dul.Data.AssemblyInfoInputs.cache
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\obj\Debug\netstandard2.0\Dul.Data.AssemblyInfo.cs
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\obj\Debug\netstandard2.0\Dul.Data.csproj.CoreCompileInputs.cache
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\obj\Debug\netstandard2.0\Dul.Data.dll
+D:\Git\C#\task29_InMemoryDatabase\Dul.Data\obj\Debug\netstandard2.0\Dul.Data.pdb

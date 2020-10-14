@@ -1,0 +1,16 @@
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\task29_InMemoryDatabase.exe
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\task29_InMemoryDatabase.deps.json
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\task29_InMemoryDatabase.runtimeconfig.json
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\task29_InMemoryDatabase.runtimeconfig.dev.json
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\task29_InMemoryDatabase.dll
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\task29_InMemoryDatabase.pdb
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\Dul.Data.dll
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\bin\Debug\netcoreapp3.1\Dul.Data.pdb
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.csprojAssemblyReference.cache
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.AssemblyInfoInputs.cache
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.AssemblyInfo.cs
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.csproj.CoreCompileInputs.cache
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.csproj.CopyComplete
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.dll
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.pdb
+D:\Git\C#\task29_InMemoryDatabase\task29_InMemoryDatabase\obj\Debug\netcoreapp3.1\task29_InMemoryDatabase.genruntimeconfig.cache

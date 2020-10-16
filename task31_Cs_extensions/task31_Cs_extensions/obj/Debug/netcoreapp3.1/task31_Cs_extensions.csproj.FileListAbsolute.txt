@@ -1,0 +1,13 @@
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\bin\Debug\netcoreapp3.1\task31_Cs_extensions.exe
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\bin\Debug\netcoreapp3.1\task31_Cs_extensions.deps.json
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\bin\Debug\netcoreapp3.1\task31_Cs_extensions.runtimeconfig.json
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\bin\Debug\netcoreapp3.1\task31_Cs_extensions.runtimeconfig.dev.json
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\bin\Debug\netcoreapp3.1\task31_Cs_extensions.dll
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\bin\Debug\netcoreapp3.1\task31_Cs_extensions.pdb
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.csprojAssemblyReference.cache
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.AssemblyInfoInputs.cache
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.AssemblyInfo.cs
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.csproj.CoreCompileInputs.cache
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.dll
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.pdb
+D:\Git\C#\task31_Cs_extensions\task31_Cs_extensions\obj\Debug\netcoreapp3.1\task31_Cs_extensions.genruntimeconfig.cache

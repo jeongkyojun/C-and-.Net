@@ -1,0 +1,11 @@
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\bin\Debug\Task1_FormTest.exe.config
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\bin\Debug\Task1_FormTest.exe
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\bin\Debug\Task1_FormTest.pdb
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.FrmCreate.resources
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.FrmTest.resources
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.Properties.Resources.resources
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.exe
+D:\Git\C#\C#Project\Task1_FormTest\Task1_FormTest\obj\Debug\Task1_FormTest.pdb

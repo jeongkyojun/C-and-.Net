@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Deployment.Application;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
@@ -25,10 +27,6 @@ namespace Task2_ImgViewer
 
         }
 
-        private void lstDir_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
         private int SetDrive()
         {
             String[] strDrives;
@@ -78,6 +76,8 @@ namespace Task2_ImgViewer
             return true;
         }
 
+        // 리스트뷰 더블클릭
+        // 폴더/드라이브 변경 처리
         private void lstDir_DoubleClick(object sender, EventArgs e)
         {
             int nSel;
@@ -119,7 +119,7 @@ namespace Task2_ImgViewer
             // 툴팁 연결
             tipPath.SetToolTip(lblPath, lblPath.Text);
         }
-        private void SettingFile(String strParentPath)
+        private void SetImgFile(String strParentPath)
         {
             System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo(strParentPath);
             int nCnt;
@@ -134,7 +134,7 @@ namespace Task2_ImgViewer
                     {
                         MakePicCtrl(nCnt, fileInfo.FullName);
                         nCnt += 1;
-                        MakeLblCtrl(nCnt, fileInfo, Name);
+                        MakeLblCtrl(nCnt, fileInfo.Name);
                         nCnt += 1;
                         Application.DoEvents();
                     }
@@ -201,7 +201,35 @@ namespace Task2_ImgViewer
             pic.Click += new System.EventHandler(Ctrl_Click);
             pic.DoubleClick += new System.EventHandler(Ctrl_DoubleClick);
         }
+        private void MakeLblCtrl(int nIndex, String strFilePath)
+        {
+            //픽처박스 컨트롤을 생성한다.
+            Label lbl = new Label();
+            Point pos;
 
+            lbl.Name = "lbl" + nIndex.ToString();// 이름
+            lbl.Tag = nIndex.ToString();
+            lbl.Size = new Size(80, 80);
+
+            GetPos(nIndex, out pos);
+
+            lbl.Location = pos;
+            lbl.BorderStyle = BorderStyle.FixedSingle;
+            splitContainer1.Panel2.Controls.Add(lbl); // splitContainer1의 Panel2에 패널을 추가
+
+            try
+            {
+                lbl.Image = System.Drawing.Bitmap.FromFile(strFilePath); // 그림 보여주기
+            }
+            catch
+            {
+                lbl.Image = null;
+            }
+
+            // 클릭/더블클릭 이벤트와 연결
+            lbl.Click += new System.EventHandler(Ctrl_Click);
+            lbl.DoubleClick += new System.EventHandler(Ctrl_DoubleClick);
+        }
         private void GetPos(int nIndex, out Point pos)
         {
             pos = new Point();
@@ -270,12 +298,79 @@ namespace Task2_ImgViewer
         }
         private Control GetCtrl(String strCtrlName, int nTag)
         {
+            Control.ControlCollection myCtrl = splitContainer1.Panel2.Controls;
+            
+            foreach(Control ctrl in myCtrl)
+            {
+                //컨트롤 종류가 일치하고
+                if(ctrl.GetType().Name.IndexOf(strCtrlName) != -1)
+                {
+                    // 태그가 일치하면
+                    if(Convert.ToInt32(ctrl.Tag.ToString())==nTag)
+                    {
+                        return ctrl;
+                    }
+                }
+            }
 
+            // 일치하지 않는경우 null 반환
             return null;
         }
         private void Ctrl_DoubleClick(object sender, EventArgs e)
         {
+            PictureBox pic;
+            Label lbl;
 
+            if(sender.GetType().Name.IndexOf("PictureBox")!=-1) // 클릭한 컨트롤이 픽쳐박스일 경우
+            {
+                pic = (System.Windows.Forms.PictureBox)sender;
+
+                //라벨 컨트롤을 얻는다.
+                lbl = (System.Windows.Forms.Label)GetCtrl("Label", Convert.ToInt32(pic.Tag) + 1);
+            }
+            else// 클릭한 컨트롤이 라벨일 경우
+            {
+                lbl = (System.Windows.Forms.Label)sender;
+            }
+
+            //폼을 생성한다.
+            Task2_ImgViewer.FrmSelect dlg = new Task2_ImgViewer.FrmSelect();
+            Size sizePic = new Size();
+
+            //폼의 캡션을 그림의 전체 경로로 한다.
+            dlg.Text = "그림 선택 - " + lblPath.Text + "\\" + lbl.Text;
+            //선택한 그림을 picSel에 보여준다.
+            dlg.picSel.Image = System.Drawing.Bitmap.FromFile(lblPath.Text + "\\" + lbl.Text);
+
+            //폼의 크기를 적당히 조절한다.
+            sizePic = dlg.picSel.Size;
+            sizePic.Height += 30;
+            sizePic.Width += 15;
+
+            dlg.Size = sizePic;
+            dlg.picSel.Location = new Point(5, 5);
+
+            // 폼을 모달 형태로 보여준다.
+            dlg.ShowDialog();
+        }
+
+        private void MovePicCtrl()
+        {
+            int i = 0;
+            Point pos;
+
+            Control.ControlCollection myCtrl = splitContainer1.Panel2.Controls;
+
+            foreach (Control ctrl in myCtrl)
+            {
+                GetPos(i, out pos);
+                ctrl.Location = pos;
+                i++;
+            }
+        }
+        private void splitContainer1_Panel2_SizedChanged(object sender, EventArgs e)
+        {
+            MovePicCtrl();
         }
     }
     

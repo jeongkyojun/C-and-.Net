@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picSel = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picSel)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picSel
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picSel.Location = new System.Drawing.Point(0, 0);
+            this.picSel.Name = "picSel";
+            this.picSel.Size = new System.Drawing.Size(100, 50);
+            this.picSel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picSel.TabIndex = 0;
+            this.picSel.TabStop = false;
+            this.picSel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picSel_MouseDown);
             // 
             // FrmSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picSel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmSelect";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmSelect_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picSel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -59,6 +61,6 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox picSel;
     }
 }

@@ -33,11 +33,11 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.lstDir = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imglstTmp = new System.Windows.Forms.ImageList(this.components);
             this.lblPath = new System.Windows.Forms.Label();
             this.picSelect = new System.Windows.Forms.PictureBox();
-            this.imglstTmp = new System.Windows.Forms.ImageList(this.components);
             this.tipPath = new System.Windows.Forms.ToolTip(this.components);
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -50,6 +50,7 @@
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
@@ -57,6 +58,10 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Resize += new System.EventHandler(this.splitContainer1_Panel2_SizedChanged);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 180;
             this.splitContainer1.TabIndex = 0;
@@ -76,8 +81,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.picSelect);
-            this.splitContainer2.Size = new System.Drawing.Size(180, 450);
-            this.splitContainer2.SplitterDistance = 301;
+            this.splitContainer2.Size = new System.Drawing.Size(178, 448);
+            this.splitContainer2.SplitterDistance = 299;
             this.splitContainer2.TabIndex = 0;
             // 
             // lstDir
@@ -89,35 +94,17 @@
             this.lstDir.Location = new System.Drawing.Point(0, 20);
             this.lstDir.MultiSelect = false;
             this.lstDir.Name = "lstDir";
-            this.lstDir.Size = new System.Drawing.Size(180, 281);
+            this.lstDir.Size = new System.Drawing.Size(178, 279);
             this.lstDir.SmallImageList = this.imglstTmp;
             this.lstDir.TabIndex = 1;
             this.lstDir.UseCompatibleStateImageBehavior = false;
             this.lstDir.View = System.Windows.Forms.View.Details;
-            this.lstDir.SelectedIndexChanged += new System.EventHandler(this.lstDir_SelectedIndexChanged);
             this.lstDir.DoubleClick += new System.EventHandler(this.lstDir_DoubleClick);
             // 
-            // lblPath
+            // columnHeader1
             // 
-            this.lblPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPath.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblPath.Location = new System.Drawing.Point(0, 0);
-            this.lblPath.Name = "lblPath";
-            this.lblPath.Size = new System.Drawing.Size(180, 20);
-            this.lblPath.TabIndex = 0;
-            this.lblPath.Text = "label1";
-            this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // picSelect
-            // 
-            this.picSelect.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picSelect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSelect.Location = new System.Drawing.Point(-43, 3);
-            this.picSelect.Name = "picSelect";
-            this.picSelect.Size = new System.Drawing.Size(266, 141);
-            this.picSelect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picSelect.TabIndex = 2;
-            this.picSelect.TabStop = false;
+            this.columnHeader1.Text = "드라이브 및 폴더";
+            this.columnHeader1.Width = 200;
             // 
             // imglstTmp
             // 
@@ -126,11 +113,29 @@
             this.imglstTmp.Images.SetKeyName(0, "map_concept_1.png");
             this.imglstTmp.Images.SetKeyName(1, "디자인.png");
             this.imglstTmp.Images.SetKeyName(2, "유니티_닷지.png");
+            this.imglstTmp.Images.SetKeyName(3, "가이드라인.jpg");
             // 
-            // columnHeader1
+            // lblPath
             // 
-            this.columnHeader1.Text = "드라이브 및 폴더";
-            this.columnHeader1.Width = 200;
+            this.lblPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPath.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPath.Location = new System.Drawing.Point(0, 0);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(178, 20);
+            this.lblPath.TabIndex = 0;
+            this.lblPath.Text = "label1";
+            this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // picSelect
+            // 
+            this.picSelect.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSelect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSelect.Location = new System.Drawing.Point(-44, 3);
+            this.picSelect.Name = "picSelect";
+            this.picSelect.Size = new System.Drawing.Size(266, 141);
+            this.picSelect.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSelect.TabIndex = 2;
+            this.picSelect.TabStop = false;
             // 
             // FrmViewer
             // 

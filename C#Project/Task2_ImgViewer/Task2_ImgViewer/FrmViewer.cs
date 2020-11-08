@@ -22,18 +22,13 @@ namespace Task2_ImgViewer
             InitializeComponent();
         }
 
-        private void FrmViewer_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private int SetDrive()
         {
             String[] strDrives;
             String strTmp;
 
             // Up항목을 추가한다.
-            lstDir.Items.Add("...", 0);
+            lstDir.Items.Add("..", 0);
 
             // 드라이브 목록을 얻는다.
             strDrives = System.IO.Directory.GetLogicalDrives();
@@ -51,15 +46,13 @@ namespace Task2_ImgViewer
         // 반환값 : 성공, 실패
         private bool SetFolder(String strParentPath)
         {
+            MessageBox.Show(strParentPath);
             System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo(strParentPath);
-
             // 리스트뷰의 아이템을 모두 삭제한 후
             lstDir.Items.Clear();
-
             // 드라이브 정보를 보여준다.
             m_nCnt = SetDrive();
             lblPath.Text = "";
-
             try
             {
                 foreach (System.IO.DirectoryInfo dirInfoCurDir in dirInfo.GetDirectories("*"))
@@ -83,18 +76,16 @@ namespace Task2_ImgViewer
             int nSel;
             String strSelText;
             String strTmp;
-
+            
             // 선택된 항목의 텍스트와 인덱스를 얻는다.
             nSel = lstDir.SelectedItems[0].Index;
             strSelText = lstDir.SelectedItems[0].SubItems[0].Text;
-
             m_nSelLabel = -1;
             picSelect.Image = null;
 
             if (nSel == 0)//위로
             {
                 int nStart;
-
                 nStart = lblPath.Text.LastIndexOf("\\");
                 if (nStart == -1)
                 {
@@ -111,11 +102,11 @@ namespace Task2_ImgViewer
                 strTmp = lblPath.Text + "\\" + strSelText + "\\";
 
             // 하위 폴더를 보여준다.
-            if(SetFolder(strTmp))
+
+            if (SetFolder(strTmp))
             {
                 SetImgFile(strTmp);
             }
-
             // 툴팁 연결
             tipPath.SetToolTip(lblPath, lblPath.Text);
         }
@@ -338,7 +329,7 @@ namespace Task2_ImgViewer
             Size sizePic = new Size();
 
             //폼의 캡션을 그림의 전체 경로로 한다.
-            dlg.Text = "그림 선택 - " + lblPath.Text + "\\" + lbl.Text;
+            dlg.Text = "그림 선택-" + lblPath.Text + "\\" + lbl.Text;
             //선택한 그림을 picSel에 보여준다.
             dlg.picSel.Image = System.Drawing.Bitmap.FromFile(lblPath.Text + "\\" + lbl.Text);
 
@@ -371,6 +362,11 @@ namespace Task2_ImgViewer
         private void splitContainer1_Panel2_SizedChanged(object sender, EventArgs e)
         {
             MovePicCtrl();
+        }
+
+        private void FrmViewer_Load(object sender, EventArgs e)
+        {
+            SetDrive();
         }
     }
     

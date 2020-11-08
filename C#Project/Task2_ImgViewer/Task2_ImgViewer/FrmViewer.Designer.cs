@@ -123,7 +123,6 @@
             this.lblPath.Name = "lblPath";
             this.lblPath.Size = new System.Drawing.Size(178, 20);
             this.lblPath.TabIndex = 0;
-            this.lblPath.Text = "label1";
             this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // picSelect

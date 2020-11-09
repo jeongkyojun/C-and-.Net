@@ -110,10 +110,9 @@
             // 
             this.imglstTmp.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTmp.ImageStream")));
             this.imglstTmp.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglstTmp.Images.SetKeyName(0, "map_concept_1.png");
-            this.imglstTmp.Images.SetKeyName(1, "디자인.png");
-            this.imglstTmp.Images.SetKeyName(2, "유니티_닷지.png");
-            this.imglstTmp.Images.SetKeyName(3, "가이드라인.jpg");
+            this.imglstTmp.Images.SetKeyName(0, "up.bmp");
+            this.imglstTmp.Images.SetKeyName(1, "drive.bmp");
+            this.imglstTmp.Images.SetKeyName(2, "folder.bmp");
             // 
             // lblPath
             // 
@@ -123,6 +122,7 @@
             this.lblPath.Name = "lblPath";
             this.lblPath.Size = new System.Drawing.Size(178, 20);
             this.lblPath.TabIndex = 0;
+            this.lblPath.Text = "label1";
             this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // picSelect

@@ -46,20 +46,23 @@ namespace Task2_ImgViewer
         // 반환값 : 성공, 실패
         private bool SetFolder(String strParentPath)
         {
-            MessageBox.Show(strParentPath);
             System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo(strParentPath);
+            
             // 리스트뷰의 아이템을 모두 삭제한 후
             lstDir.Items.Clear();
+            
             // 드라이브 정보를 보여준다.
             m_nCnt = SetDrive();
             lblPath.Text = "";
+
             try
             {
                 foreach (System.IO.DirectoryInfo dirInfoCurDir in dirInfo.GetDirectories("*"))
                 {
                     lstDir.Items.Add(dirInfoCurDir.Name.ToString(), 2);
                 }
-                lblPath.Text = strParentPath.Remove(strParentPath.Length - 1, 1);
+                //lblPath.Text = strParentPath.Remove(strParentPath.Length - 1, 1);
+                lblPath.Text = (strParentPath);
             }
             catch
             {
@@ -82,7 +85,6 @@ namespace Task2_ImgViewer
             strSelText = lstDir.SelectedItems[0].SubItems[0].Text;
             m_nSelLabel = -1;
             picSelect.Image = null;
-
             if (nSel == 0)//위로
             {
                 int nStart;
@@ -91,7 +93,6 @@ namespace Task2_ImgViewer
                 {
                     return;
                 }
-
                 strTmp = lblPath.Text.Remove(nStart, lblPath.Text.Length - nStart) + "\\";
             }
             else if (m_nCnt > nSel)
@@ -99,10 +100,11 @@ namespace Task2_ImgViewer
                 strTmp = strSelText + "\\";
             }
             else
+            {
                 strTmp = lblPath.Text + "\\" + strSelText + "\\";
-
+            }
             // 하위 폴더를 보여준다.
-
+            //MessageBox.Show(strTmp);
             if (SetFolder(strTmp))
             {
                 SetImgFile(strTmp);
@@ -200,7 +202,7 @@ namespace Task2_ImgViewer
 
             lbl.Name = "lbl" + nIndex.ToString();// 이름
             lbl.Tag = nIndex.ToString();
-            lbl.Size = new Size(80, 80);
+            lbl.Size = new Size(70, 20);
 
             GetPos(nIndex, out pos);
 
@@ -210,11 +212,11 @@ namespace Task2_ImgViewer
 
             try
             {
-                lbl.Image = System.Drawing.Bitmap.FromFile(strFilePath); // 그림 보여주기
+                lbl.Text = strFilePath;
             }
             catch
             {
-                lbl.Image = null;
+                lbl.Text = null;
             }
 
             // 클릭/더블클릭 이벤트와 연결
@@ -366,6 +368,8 @@ namespace Task2_ImgViewer
 
         private void FrmViewer_Load(object sender, EventArgs e)
         {
+            m_nCnt = 5;
+            lblPath.Text = null;
             SetDrive();
         }
     }

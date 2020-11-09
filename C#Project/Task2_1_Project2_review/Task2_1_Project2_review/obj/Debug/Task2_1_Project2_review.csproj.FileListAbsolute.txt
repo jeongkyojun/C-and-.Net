@@ -1,0 +1,10 @@
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\bin\Debug\Task2_1_Project2_review.exe.config
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\bin\Debug\Task2_1_Project2_review.exe
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\bin\Debug\Task2_1_Project2_review.pdb
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.Form1.resources
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.Properties.Resources.resources
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.exe
+D:\Git\C#\C#Project\Task2_1_Project2_review\Task2_1_Project2_review\obj\Debug\Task2_1_Project2_review.pdb

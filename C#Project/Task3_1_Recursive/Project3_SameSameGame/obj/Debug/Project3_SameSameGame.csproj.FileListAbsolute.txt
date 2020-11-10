@@ -1,0 +1,10 @@
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\bin\Debug\Project3_SameSameGame.exe.config
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\bin\Debug\Project3_SameSameGame.exe
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\bin\Debug\Project3_SameSameGame.pdb
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.Form1.resources
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.Properties.Resources.resources
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.exe
+D:\Git\C#\C#Project\Project3_SameSameGame\Project3_SameSameGame\obj\Debug\Project3_SameSameGame.pdb

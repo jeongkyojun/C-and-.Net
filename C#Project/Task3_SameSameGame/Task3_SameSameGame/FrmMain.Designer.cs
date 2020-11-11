@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.picScore5 = new System.Windows.Forms.PictureBox();
@@ -171,21 +172,38 @@
             // 
             // imglstBlock
             // 
-            this.imglstBlock.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
-            this.imglstBlock.ImageSize = new System.Drawing.Size(30, 30);
+            this.imglstBlock.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstBlock.ImageStream")));
             this.imglstBlock.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstBlock.Images.SetKeyName(0, "b1.bmp");
+            this.imglstBlock.Images.SetKeyName(1, "b2.bmp");
+            this.imglstBlock.Images.SetKeyName(2, "b3.bmp");
+            this.imglstBlock.Images.SetKeyName(3, "b4.bmp");
+            this.imglstBlock.Images.SetKeyName(4, "b5.bmp");
             // 
             // imglstSel
             // 
-            this.imglstSel.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
-            this.imglstSel.ImageSize = new System.Drawing.Size(30, 30);
+            this.imglstSel.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstSel.ImageStream")));
             this.imglstSel.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstSel.Images.SetKeyName(0, "s1.bmp");
+            this.imglstSel.Images.SetKeyName(1, "s2.bmp");
+            this.imglstSel.Images.SetKeyName(2, "s3.bmp");
+            this.imglstSel.Images.SetKeyName(3, "s4.bmp");
+            this.imglstSel.Images.SetKeyName(4, "s5.bmp");
             // 
             // imglstNum
             // 
-            this.imglstNum.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imglstNum.ImageSize = new System.Drawing.Size(15, 20);
+            this.imglstNum.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstNum.ImageStream")));
             this.imglstNum.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstNum.Images.SetKeyName(0, "0.bmp");
+            this.imglstNum.Images.SetKeyName(1, "1.bmp");
+            this.imglstNum.Images.SetKeyName(2, "2.bmp");
+            this.imglstNum.Images.SetKeyName(3, "3.bmp");
+            this.imglstNum.Images.SetKeyName(4, "4.bmp");
+            this.imglstNum.Images.SetKeyName(5, "5.bmp");
+            this.imglstNum.Images.SetKeyName(6, "6.bmp");
+            this.imglstNum.Images.SetKeyName(7, "7.bmp");
+            this.imglstNum.Images.SetKeyName(8, "8.bmp");
+            this.imglstNum.Images.SetKeyName(9, "9.bmp");
             // 
             // FrmMain
             // 
@@ -207,6 +225,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "FrmMain";
             this.Text = "셈셈 게임";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picScore5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScore4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScore3)).EndInit();

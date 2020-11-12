@@ -158,12 +158,97 @@ namespace Task3_SameSameGame
                             else // 그림을 다시 채운다.
                             {
                                 if (panMain.Controls[j * maxX + nX].Visible == false)
-                                    panMain.Controls[j * maxX + nX].Visible = True;
+                                    panMain.Controls[j * maxX + nX].Visible = true;
                                 pic = (PictureBox)panMain.Controls[j * maxX + nX];
                                 pic.Image = imglstBlock.Images[m_nBlock[nX, j]];
 
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        private void MoveX()
+        {
+            int i, j;
+            int nIndex;
+            int nX, nY;
+            bool bY;
+            int nMinX;
+
+            nMinX = maxX-1;
+            bY = false;
+
+            for(i=0;i<m_nSameCnt;i++)
+            {
+                nIndex = m_nSel[i];
+
+                nX = nIndex % maxX;
+                nY = (int)(nIndex / maxX);
+
+                // 맨 아래칸이 삭제된 경우
+                if(nY==maxY-1)
+                {
+                    int nEmptyX;
+                    nEmptyX = -1;
+                    for(j=0;j<maxX-1;j++)
+                    {
+                        if(m_nBlock[j,9] == -1 && m_nBlock[j+1,9]!=-1)
+                        {
+                            nEmptyX = j;
+                            if(nMinX > nEmptyX)
+                            {
+                                nMinX = nEmptyX;
+                                break;
+                            }
+                        }
+                    }
+                    // 오른쪽의 블럭을 옮긴다.
+                    if(nEmptyX != -1)
+                    {
+                        bY = true;
+                        int k;
+                        for(j=nEmptyX;j<maxX;j++)
+                        {
+                            for(k=0;k<maxY;k++)
+                            {
+                                if(j==maxX-1)
+                                {
+                                    m_nBlock[j, k] = -1;
+                                }
+                                else
+                                {
+                                    m_nBlock[j, k] = m_nBlock[j + 1, k];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 빈칸이 없음 블럭을 옮길 필요가 없다
+            if (bY == false) return;
+
+            PictureBox pic;
+            for (i = nMinX; i < maxX; i++)
+            {
+                for (j = 0; j < maxY; j++)
+                {
+                    nIndex = i + j * maxX;
+                    pic = (PictureBox)panMain.Controls[nIndex];
+                    if (m_nBlock[i, j] == -1) // 빈칸일 경우 visible을 flase로
+                    {
+                        if (pic.Visible)
+                            pic.Visible = false;
+                    }
+                    else // 빈칸이 아닐 경우 맞는 그림을 보여준다.
+                    {
+                        if (pic.Visible == false)
+                        {
+                            pic.Visible = true;
+                        }
+                        pic.Image = imglstBlock.Images[m_nBlock[i, j]];
                     }
                 }
             }

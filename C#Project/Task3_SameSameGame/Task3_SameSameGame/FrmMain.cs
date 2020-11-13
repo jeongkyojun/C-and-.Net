@@ -14,18 +14,26 @@ namespace Task3_SameSameGame
     public partial class FrmMain : Form
     {
         int[,] m_nBlock;
-        int[] m_nSel;             // 선택된 블럭(인접한 같은 모양의 블럭) 저장
-        bool[,] m_bVisit;    // 방문했는지 표시
-        int m_nSameCnt;                         // 인접한 같은 모양의 개수
+        int[] m_nSel;               // 선택된 블럭(인접한 같은 모양의 블럭) 저장
+        bool[,] m_bVisit;           // 방문했는지 표시
+        int m_nSameCnt;             // 인접한 같은 모양의 개수
 
-        int maxY { get; set; }
-        int maxX { get; set; }
+        private int maxY { get; set; }
+        private int maxX { get; set; }
+        
+        // 블록 개수
+        private int m_nBlockCnt { get; set; }
+        // 점수
+        private int m_nScore { get; set; }
 
+        private int m_nPointBlock { get; set; }
+        private int m_nPointIndex { get; set; }
         public FrmMain()
         {
             InitializeComponent();
         }
 
+        // 처음 시작
         private void FrmMain_Load(object sender, EventArgs e)
         {
             maxX = 20;
@@ -252,6 +260,148 @@ namespace Task3_SameSameGame
                     }
                 }
             }
+        }
+
+        // 게임이 끝났는지 검사
+        // 인접한 같은 블럭이 하나라도 있으면 끝난것이 아니다.
+        private bool isGameEnd()
+        {
+            int i = 0, j = 0;
+
+            for(i=1;i<maxX-1;i++)
+            {
+                for(j=1;j<maxY-1;j++)
+                {
+                    // 왼쪽, 오른쪽, 위, 아래 순으로 검사
+                    if(m_nBlock[i,j]!=-1)
+                    {
+                        if (m_nBlock[i, j] == m_nBlock[i - 1, j]) return false;
+                        if (m_nBlock[i, j] == m_nBlock[i + 1, j]) return false;
+                        if (m_nBlock[i, j] == m_nBlock[i , j -1]) return false;
+                        if (m_nBlock[i, j] == m_nBlock[i , j +1]) return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        // 점수 구하는 공식 :(같은 블록 개수 -2)*(같은 블록 개수 -2);
+        // 점수 보여주기
+        private void SetScore()
+        {
+            String strScore;
+            int i, nCnt;
+
+            strScore = m_nScore.ToString();
+            nCnt = strScore.Length;
+            // 자리수 맞추기
+            for(i=0;i<5-nCnt;i++)
+            {
+                strScore = "0" + strScore;
+            }
+            picScore1.Image = imglstNum.Images[Convert.ToInt32(strScore.Substring(4, 1))];
+            picScore2.Image = imglstNum.Images[Convert.ToInt32(strScore.Substring(3, 1))];
+            picScore3.Image = imglstNum.Images[Convert.ToInt32(strScore.Substring(2, 1))];
+            picScore4.Image = imglstNum.Images[Convert.ToInt32(strScore.Substring(1, 1))];
+            picScore5.Image = imglstNum.Images[Convert.ToInt32(strScore.Substring(0, 1))];
+        }
+
+        // 남은 블럭 개수 보여주기
+        private void SetBlock()
+        {
+            String strBlock;
+            int i, nCnt;
+            strBlock = m_nBlockCnt.ToString();
+            nCnt = strBlock.Length;
+            for(i=0;i<3-nCnt;i++)
+            {
+                strBlock = "0" + strBlock;
+            }
+
+            picBlock1.Image = imglstNum.Images[Convert.ToInt32(strBlock.Substring(2, 1))];
+            picBlock2.Image = imglstNum.Images[Convert.ToInt32(strBlock.Substring(1, 1))];
+            picBlock3.Image = imglstNum.Images[Convert.ToInt32(strBlock.Substring(0, 1))];
+        }
+        private void MakePicCtrl(int nIndex)
+        {
+            PictureBox pic = new PictureBox();
+            Point pos = new Point();
+            //int nRndNum;
+            int nX, nY;
+
+            // 인덱스를 배열의 x,y 위치로 변환
+            nX = nIndex % maxX;
+            nY = (int)(nIndex / maxX);
+
+            pic.SizeMode = PictureBoxSizeMode.StretchImage;
+            // tag에 컨트롤의 인덱스를 저장
+            pic.Tag = nIndex.ToString();
+            pic.Size = new Size(30, 30); // 크기
+
+            // 위치 저장
+            pic.Location = new Point((nX*30),(nY * 30));
+            panMain.Controls.Add(pic); // 패널에 추가
+
+            // 클릭, 더블클릭 이벤트와 연결
+            pic.Click += new System.EventHandler(Ctrl_Click);
+            pic.MouseMove += new System.Windows.Forms.MouseEventHandler(Ctrl_MouseMove);
+        }
+
+        // 게임 초기화
+        private void initGame()
+        {
+            int i = 0;
+            //int nCnt;
+            int nRndNum;
+            PictureBox pic;
+
+            // 픽쳐박스 설정
+            Control.ControlCollection myCtrl = panMain.Controls;
+
+            foreach( Control ctl in myCtrl)
+            {
+                pic = (System.Windows.Forms.PictureBox)ctl;
+                pic.Visible = true;
+
+                // 블럭 종류 암기(랜덤하게)
+                nRndNum = GetRndBlock();
+                // 실제 이미지 설정
+
+                pic.Image = imglstBlock.Images[nRndNum];
+                // 이미지에 맞는 숫자를 배열에 설정
+                m_nBlock[i % maxX, (int)(i / maxX)] = nRndNum;
+                m_nSel[i] = -1;
+                i++;
+            }
+
+            m_nPointBlock = -1;
+            m_nPointIndex = -1;
+
+            m_nBlockCnt = maxX*maxY;
+            m_nScore = 0;
+
+            SetScore();
+            SetBlock();
+        }
+
+        private int GetRndBlock()
+        {
+            Random m_rnd=new Random();
+            // 0에서 4까지의 숫자를 발생
+            return m_rnd.Next(0, 4);
+        }
+
+        private void Ctrl_MouseMove(object sender, MouseEventArgs e)
+        {
+            int nX, nY;
+            int i, j;
+            PictureBox pic;
+
+            // 원본 그림을 표시한다.
+        }
+        private void Ctrl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

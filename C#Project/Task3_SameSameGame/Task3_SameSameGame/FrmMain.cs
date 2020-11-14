@@ -41,7 +41,8 @@ namespace Task3_SameSameGame
             m_nBlock = new int[maxX, maxY];
             m_nSel = new int[maxX * maxY];
             m_bVisit = new bool[maxX, maxY];
-
+            int i;
+            
         }
 
         private void FindSameBlock(int nX, int nY)
@@ -282,6 +283,7 @@ namespace Task3_SameSameGame
                     }
                 }
             }
+            MessageBox.Show("Game End!");
             return true;
         }
 
@@ -327,6 +329,7 @@ namespace Task3_SameSameGame
             PictureBox pic = new PictureBox();
             Point pos = new Point();
             //int nRndNum;
+            int n_Size = 26;
             int nX, nY;
 
             // 인덱스를 배열의 x,y 위치로 변환
@@ -336,10 +339,10 @@ namespace Task3_SameSameGame
             pic.SizeMode = PictureBoxSizeMode.StretchImage;
             // tag에 컨트롤의 인덱스를 저장
             pic.Tag = nIndex.ToString();
-            pic.Size = new Size(30, 30); // 크기
+            pic.Size = new Size(n_Size, n_Size); // 크기
 
             // 위치 저장
-            pic.Location = new Point((nX*30),(nY * 30));
+            pic.Location = new Point((nX*n_Size),(nY * n_Size));
             panMain.Controls.Add(pic); // 패널에 추가
 
             // 클릭, 더블클릭 이벤트와 연결
@@ -398,10 +401,98 @@ namespace Task3_SameSameGame
             PictureBox pic;
 
             // 원본 그림을 표시한다.
+            if(m_nSameCnt>1 && m_nPointBlock >=0)
+            {
+                for(i =0; i<m_nSameCnt;i++)
+                {
+                    pic = (PictureBox)panMain.Controls[m_nSel[i]];
+                    pic.Image = imglstBlock.Images[m_nPointBlock];
+                }
+            }
+
+            for(i=0;i<maxX;i++)
+            {
+                for(j=0;j<maxY;i++)
+                {
+                    m_bVisit[i, j] = false;
+                }
+            }
+
+            pic = (PictureBox)sender;
+            // 블럭의 인덱스를 얻는다
+            m_nPointBlock = Convert.ToInt32(pic.Tag.ToString());
+
+            // 인덱스를 배열의 x,y 위치로 변환
+            nX = m_nPointIndex % maxX;
+            nY = (int)(m_nPointIndex / maxX);
+
+            // 블럭의 종류를 저장한다.
+            m_nPointBlock = m_nBlock[nX, nY];
+
+            if(m_nPointBlock == -1)
+            {
+                return;
+            }
+
+            // 방문표시를 한다
+            m_bVisit[nX, nY] = true;
+            m_nSameCnt = 0;
+            m_nSel[m_nSameCnt] = m_nPointIndex;
+            m_nSameCnt += 1;
+
+            // 인접한 같은 블록들을 찾는다.
+            FindSameBlock(nX, nY);
+            if(m_nSameCnt>1 && m_nPointBlock >=0)
+            {
+                for(i=0;i<m_nPointBlock;i++)
+                {
+                    pic = (PictureBox)panMain.Controls[m_nSel[i]];
+                    pic.Image = imglstSel.Images[m_nPointBlock];
+                }
+            }
         }
         private void Ctrl_Click(object sender, EventArgs e)
         {
+            int i;
+            int nX, nY;
+            int nIndex;
 
+            // 블럭을 삭제(-1 저장) 한다.
+            if(m_nSameCnt>1&&m_nPointBlock>=0)
+            {
+                for(i=0;i<m_nSameCnt;i++)
+                {
+                    nIndex = m_nSel[i];
+                    // 지워진 블럭에 -1을 저장한다.
+                    nX = nIndex % maxX;
+                    nY = (int)(nIndex / maxX);
+                    m_nBlock[nX, nY] = -1;
+                }
+                // 블럭들의 위치를 재설정한다.
+                MoveX();
+                MoveY();
+
+                //점수 및 남은블럭 계산
+                m_nBlockCnt -= m_nSameCnt;
+                SetBlock();
+                m_nScore += (m_nSameCnt - 2) * (m_nSameCnt - 2);
+                SetScore();
+
+                if(isGameEnd())
+                {
+                    if(MessageBox.Show("게임이 끝났습니다. 다시시작하겠습니까?","셈셈게임",
+                        MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.OK)
+                    {
+                        initGame();
+                    }
+                }
+            }
+            m_nSameCnt = -1;
+            m_nPointIndex = -1;
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
         }
     }
 }

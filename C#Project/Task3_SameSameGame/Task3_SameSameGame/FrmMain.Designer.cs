@@ -154,16 +154,17 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(12, 351);
+            this.btnNew.Location = new System.Drawing.Point(17, 422);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(109, 36);
             this.btnNew.TabIndex = 11;
             this.btnNew.Text = "New Game";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(127, 351);
+            this.btnExit.Location = new System.Drawing.Point(132, 422);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(109, 36);
             this.btnExit.TabIndex = 12;
@@ -209,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 398);
+            this.ClientSize = new System.Drawing.Size(807, 470);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.panMain);

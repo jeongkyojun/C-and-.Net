@@ -114,19 +114,25 @@ namespace Task2_ImgViewer
         }
         private void SetImgFile(String strParentPath)
         {
+            // 해당 경로의 디렉토리 정보를 받는다
             System.IO.DirectoryInfo dirInfo = new System.IO.DirectoryInfo(strParentPath);
             int nCnt;
+            // splitContiner의 Panel2 를 비운다. 
             splitContainer1.Panel2.Controls.Clear();
             nCnt = 0;
 
             try
             {
+                // 파일 정보를 확인한다.
                 foreach(System.IO.FileInfo fileInfo in dirInfo.GetFiles("*.*"))
                 {
                     if(IsImgFile(fileInfo.Extension))
                     {
+                        // 만약 이미지 파일이 맞으면
+                        // 그림을 추가하고
                         MakePicCtrl(nCnt, fileInfo.FullName);
                         nCnt += 1;
+                        // 라벨을 추가한다.
                         MakeLblCtrl(nCnt, fileInfo.Name);
                         nCnt += 1;
                         Application.DoEvents();
@@ -174,6 +180,7 @@ namespace Task2_ImgViewer
             pic.SizeMode = PictureBoxSizeMode.StretchImage;
             pic.Tag = nIndex.ToString();
             pic.Size = new Size(80, 80);
+            pic.MaximumSize = new Size(80, 80);
 
             GetPos(nIndex, out pos);
 
@@ -202,7 +209,7 @@ namespace Task2_ImgViewer
 
             lbl.Name = "lbl" + nIndex.ToString();// 이름
             lbl.Tag = nIndex.ToString();
-            lbl.Size = new Size(70, 20);
+            lbl.Size = new Size(80, 20);
 
             GetPos(nIndex, out pos);
 
@@ -248,7 +255,7 @@ namespace Task2_ImgViewer
                 nXCnt = (int)(sizePan.Width/85);
                 if (nXCnt <= 0)
                     return;
-                i = (int)(nIndex / 2) & nXCnt;
+                i = (int)(nIndex / 2) % nXCnt;
                 pos.X = (i * 80) + (5 * i) + 5;
                 i = (int)((nIndex / 2) / nXCnt);
                 pos.Y = (i * 80) + (35 * i) + 5 + 82;

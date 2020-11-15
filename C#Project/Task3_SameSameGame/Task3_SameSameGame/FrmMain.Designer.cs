@@ -149,7 +149,7 @@
             this.panMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panMain.Location = new System.Drawing.Point(12, 41);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(604, 304);
+            this.panMain.Size = new System.Drawing.Size(1200, 600);
             this.panMain.TabIndex = 10;
             // 
             // btnNew

@@ -41,14 +41,13 @@ namespace Task3_SameSameGame
             m_nBlock = new int[maxX, maxY];
             m_nSel = new int[maxX * maxY];
             m_bVisit = new bool[maxX, maxY];
-            int i;
             
         }
 
         private void FindSameBlock(int nX, int nY)
         {
             // 위로찾기
-            if(nY<0)
+            if(nY>0)
             {
                 if((m_nBlock[nX,nY-1]==m_nPointBlock)&&m_bVisit[nX,nY-1]==false)
                 {
@@ -59,7 +58,7 @@ namespace Task3_SameSameGame
                     FindSameBlock(nX, nY -1);
                 }
             }
-            if(nY<9)
+            if(nY<maxY-1)
             {
                 if ((m_nBlock[nX, nY+1] == m_nPointBlock) && m_bVisit[nX, nY + 1] == false)
                 {
@@ -85,7 +84,7 @@ namespace Task3_SameSameGame
             {
                 if ((m_nBlock[nX + 1, nY] == m_nPointBlock) && m_bVisit[nX + 1, nY] == false)
                 {
-                    m_nSel[m_nSameCnt] = nY * 20 + (nX + 1); // x,y값을 index로변환
+                    m_nSel[m_nSameCnt] = nY * maxX + (nX + 1); // x,y값을 index로변환
                     m_nSameCnt += 1;
 
                     m_bVisit[nX + 1, nY] = true;
@@ -329,7 +328,7 @@ namespace Task3_SameSameGame
             PictureBox pic = new PictureBox();
             Point pos = new Point();
             //int nRndNum;
-            int n_Size = 26;
+            int n_Size = 24;
             int nX, nY;
 
             // 인덱스를 배열의 x,y 위치로 변환
@@ -353,7 +352,7 @@ namespace Task3_SameSameGame
         // 게임 초기화
         private void initGame()
         {
-            int i = 0;
+            int i = 0,j;
             //int nCnt;
             int nRndNum;
             PictureBox pic;
@@ -382,7 +381,10 @@ namespace Task3_SameSameGame
 
             m_nBlockCnt = maxX*maxY;
             m_nScore = 0;
-
+            for (j = 0; j < m_nBlockCnt; j++)
+            {
+                MakePicCtrl(j);
+            }
             SetScore();
             SetBlock();
         }
@@ -391,7 +393,7 @@ namespace Task3_SameSameGame
         {
             Random m_rnd=new Random();
             // 0에서 4까지의 숫자를 발생
-            return m_rnd.Next(0, 4);
+            return m_rnd.Next(0, 10000)%5;
         }
 
         private void Ctrl_MouseMove(object sender, MouseEventArgs e)
@@ -410,9 +412,10 @@ namespace Task3_SameSameGame
                 }
             }
 
+            // 방문지는 false로 셋팅
             for(i=0;i<maxX;i++)
             {
-                for(j=0;j<maxY;i++)
+                for(j=0;j<maxY;j++)
                 {
                     m_bVisit[i, j] = false;
                 }
@@ -420,7 +423,7 @@ namespace Task3_SameSameGame
 
             pic = (PictureBox)sender;
             // 블럭의 인덱스를 얻는다
-            m_nPointBlock = Convert.ToInt32(pic.Tag.ToString());
+            m_nPointIndex = Convert.ToInt32(pic.Tag.ToString());
 
             // 인덱스를 배열의 x,y 위치로 변환
             nX = m_nPointIndex % maxX;
@@ -444,7 +447,7 @@ namespace Task3_SameSameGame
             FindSameBlock(nX, nY);
             if(m_nSameCnt>1 && m_nPointBlock >=0)
             {
-                for(i=0;i<m_nPointBlock;i++)
+                for(i=0;i<m_nSameCnt;i++)
                 {
                     pic = (PictureBox)panMain.Controls[m_nSel[i]];
                     pic.Image = imglstSel.Images[m_nPointBlock];
@@ -481,7 +484,7 @@ namespace Task3_SameSameGame
                 if(isGameEnd())
                 {
                     if(MessageBox.Show("게임이 끝났습니다. 다시시작하겠습니까?","셈셈게임",
-                        MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.OK)
+                        MessageBoxButtons.YesNo,MessageBoxIcon.Information)==DialogResult.Yes)
                     {
                         initGame();
                     }
@@ -493,6 +496,8 @@ namespace Task3_SameSameGame
 
         private void btnNew_Click(object sender, EventArgs e)
         {
+            int i;
+            initGame();
         }
     }
 }

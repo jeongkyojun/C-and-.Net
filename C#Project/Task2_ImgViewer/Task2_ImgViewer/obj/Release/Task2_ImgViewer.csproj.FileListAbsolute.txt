@@ -1,0 +1,11 @@
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\bin\Release\Task2_ImgViewer.exe.config
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\bin\Release\Task2_ImgViewer.exe
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\bin\Release\Task2_ImgViewer.pdb
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.FrmSelect.resources
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.FrmViewer.resources
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.Properties.Resources.resources
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.exe
+D:\Git\C#\C#Project\Task2_ImgViewer\Task2_ImgViewer\obj\Release\Task2_ImgViewer.pdb

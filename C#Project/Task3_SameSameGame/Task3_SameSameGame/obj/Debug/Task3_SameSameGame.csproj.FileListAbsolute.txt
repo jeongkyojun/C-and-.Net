@@ -1,7 +1,6 @@
 D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\bin\Debug\Task3_SameSameGame.exe.config
 D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\bin\Debug\Task3_SameSameGame.exe
 D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\bin\Debug\Task3_SameSameGame.pdb
-D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\obj\Debug\Task3_SameSameGame.csprojAssemblyReference.cache
 D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\obj\Debug\Task3_SameSameGame.FrmMain.resources
 D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\obj\Debug\Task3_SameSameGame.Properties.Resources.resources
 D:\Git\C#\C#Project\Task3_SameSameGame\Task3_SameSameGame\obj\Debug\Task3_SameSameGame.csproj.GenerateResource.cache

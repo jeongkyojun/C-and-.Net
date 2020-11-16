@@ -146,15 +146,17 @@
             // 
             // panMain
             // 
+            this.panMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panMain.BackgroundImage")));
             this.panMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panMain.Location = new System.Drawing.Point(12, 41);
+            this.panMain.Location = new System.Drawing.Point(6, 49);
+            this.panMain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panMain.Name = "panMain";
-            this.panMain.Size = new System.Drawing.Size(1200, 600);
-            this.panMain.TabIndex = 10;
+            this.panMain.Size = new System.Drawing.Size(690, 379);
+            this.panMain.TabIndex = 27;
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(17, 422);
+            this.btnNew.Location = new System.Drawing.Point(12, 426);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(109, 36);
             this.btnNew.TabIndex = 11;
@@ -164,12 +166,13 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(132, 422);
+            this.btnExit.Location = new System.Drawing.Point(127, 426);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(109, 36);
             this.btnExit.TabIndex = 12;
             this.btnExit.Text = "Exit Game";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // imglstBlock
             // 
@@ -210,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 470);
+            this.ClientSize = new System.Drawing.Size(705, 469);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.panMain);
@@ -227,6 +230,7 @@
             this.Name = "FrmMain";
             this.Text = "셈셈 게임";
             this.Load += new System.EventHandler(this.FrmMain_Load);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmMain_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.picScore5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScore4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScore3)).EndInit();
@@ -252,12 +256,12 @@
         private System.Windows.Forms.PictureBox picBlock3;
         private System.Windows.Forms.PictureBox picBlock2;
         private System.Windows.Forms.PictureBox picBlock1;
-        private System.Windows.Forms.Panel panMain;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ImageList imglstBlock;
         private System.Windows.Forms.ImageList imglstSel;
         private System.Windows.Forms.ImageList imglstNum;
+        internal System.Windows.Forms.Panel panMain;
     }
 }
 

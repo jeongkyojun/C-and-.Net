@@ -375,9 +375,17 @@ namespace Task2_ImgViewer
 
         private void FrmViewer_Load(object sender, EventArgs e)
         {
+            /*
             m_nCnt = 5;
             lblPath.Text = null;
             SetDrive();
+            */
+            SetFolder("C:\\");
+            lblPath.Text = "C:";
+            SetImgFile("C:\\");
+            m_nSelLabel = -1;
+
+            tipPath.SetToolTip(lblPath, lblPath.Text);
         }
     }
     

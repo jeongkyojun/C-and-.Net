@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panLeft = new System.Windows.Forms.Panel();
+            this.panCenter = new System.Windows.Forms.Panel();
+            this.panRight = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnRestart = new System.Windows.Forms.Button();
@@ -43,32 +43,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCnt)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panLeft
             // 
-            this.panel1.AllowDrop = true;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 250);
-            this.panel1.TabIndex = 0;
+            this.panLeft.AllowDrop = true;
+            this.panLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panLeft.BackgroundImage")));
+            this.panLeft.Location = new System.Drawing.Point(2, 2);
+            this.panLeft.Name = "panLeft";
+            this.panLeft.Size = new System.Drawing.Size(180, 250);
+            this.panLeft.TabIndex = 0;
             // 
-            // panel2
+            // panCenter
             // 
-            this.panel2.AllowDrop = true;
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Location = new System.Drawing.Point(184, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(180, 250);
-            this.panel2.TabIndex = 1;
+            this.panCenter.AllowDrop = true;
+            this.panCenter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panCenter.BackgroundImage")));
+            this.panCenter.Location = new System.Drawing.Point(184, 2);
+            this.panCenter.Name = "panCenter";
+            this.panCenter.Size = new System.Drawing.Size(180, 250);
+            this.panCenter.TabIndex = 1;
             // 
-            // panel3
+            // panRight
             // 
-            this.panel3.AllowDrop = true;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Location = new System.Drawing.Point(366, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(180, 250);
-            this.panel3.TabIndex = 1;
+            this.panRight.AllowDrop = true;
+            this.panRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panRight.BackgroundImage")));
+            this.panRight.Location = new System.Drawing.Point(366, 2);
+            this.panRight.Name = "panRight";
+            this.panRight.Size = new System.Drawing.Size(180, 250);
+            this.panRight.TabIndex = 1;
             // 
             // button1
             // 
@@ -172,11 +172,12 @@
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panRight);
+            this.Controls.Add(this.panCenter);
+            this.Controls.Add(this.panLeft);
             this.Name = "FrmMain";
             this.Text = "하노이탑";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudCnt)).EndInit();
             this.ResumeLayout(false);
 
@@ -184,9 +185,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panLeft;
+        private System.Windows.Forms.Panel panCenter;
+        private System.Windows.Forms.Panel panRight;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnRestart;

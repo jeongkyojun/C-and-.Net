@@ -1,0 +1,10 @@
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\bin\Debug\Task4_Hanoi.exe.config
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\bin\Debug\Task4_Hanoi.exe
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\bin\Debug\Task4_Hanoi.pdb
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.FrmMain.resources
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.Properties.Resources.resources
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.exe
+D:\Git\C#\C#Project\Task4_Hanoi\Task4_Hanoi\obj\Debug\Task4_Hanoi.pdb

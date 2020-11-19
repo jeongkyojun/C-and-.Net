@@ -32,8 +32,6 @@
             this.panLeft = new System.Windows.Forms.Panel();
             this.panCenter = new System.Windows.Forms.Panel();
             this.panRight = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnRestart = new System.Windows.Forms.Button();
             this.btnAuto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,6 +49,8 @@
             this.panLeft.Name = "panLeft";
             this.panLeft.Size = new System.Drawing.Size(180, 250);
             this.panLeft.TabIndex = 0;
+            this.panLeft.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
+            this.panLeft.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // panCenter
             // 
@@ -60,6 +60,8 @@
             this.panCenter.Name = "panCenter";
             this.panCenter.Size = new System.Drawing.Size(180, 250);
             this.panCenter.TabIndex = 1;
+            this.panCenter.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
+            this.panCenter.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // panRight
             // 
@@ -69,24 +71,8 @@
             this.panRight.Name = "panRight";
             this.panRight.Size = new System.Drawing.Size(180, 250);
             this.panRight.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(561, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(561, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panRight.DragDrop += new System.Windows.Forms.DragEventHandler(this.pan_DragDrop);
+            this.panRight.DragEnter += new System.Windows.Forms.DragEventHandler(this.pan_DragEnter);
             // 
             // btnRestart
             // 
@@ -105,6 +91,7 @@
             this.btnAuto.TabIndex = 4;
             this.btnAuto.Text = "자동 맞추기";
             this.btnAuto.UseVisualStyleBackColor = true;
+            this.btnAuto.Click += new System.EventHandler(this.btnAuto_Click);
             // 
             // label1
             // 
@@ -170,8 +157,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAuto);
             this.Controls.Add(this.btnRestart);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.panRight);
             this.Controls.Add(this.panCenter);
             this.Controls.Add(this.panLeft);
@@ -188,8 +173,6 @@
         private System.Windows.Forms.Panel panLeft;
         private System.Windows.Forms.Panel panCenter;
         private System.Windows.Forms.Panel panRight;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnRestart;
         private System.Windows.Forms.Button btnAuto;
         private System.Windows.Forms.Label label1;

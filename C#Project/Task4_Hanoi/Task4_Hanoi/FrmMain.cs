@@ -26,9 +26,22 @@ namespace Task4_Hanoi
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            m_nMoveCnt = 0;
+            InitHanoi(Convert.ToInt32(nudCnt.Value));
         }
 
+        private void InitHanoi(int nIndex)
+        {
+            panLeft.Controls.Clear();
+            panRight.Controls.Clear();
+            panCenter.Controls.Clear();
+
+            m_nMoveCnt = 0;
+            lblCnt.Text = m_nMoveCnt.ToString() + "번";
+            for (int i = 0; i < nIndex; i++)
+            {
+                MakeBlock(panLeft, i, i, false);
+            }
+        }
         // picturebox 생성
         // pan 컨트롤 추가
         private void MakeBlock(Panel pan, int nIndex, int nImage, bool bMoving)
@@ -59,7 +72,7 @@ namespace Task4_Hanoi
             //(위에서 아래로 떨어지는 효과)
             if(bMoving)
             {
-                for(i=0;i<=BLOCK_START_Y-(nIndex*BLOCK_HEIGHT);i+=2)
+                for(i=0;i <= BLOCK_START_Y - (nIndex*BLOCK_HEIGHT);i+=2)
                 {
                     pic.Location = new Point(BLOCK_START_X,i);
                     Application.DoEvents();
@@ -108,7 +121,7 @@ namespace Task4_Hanoi
             Panel pan;
 
             pan = GetPanCtrl(pic.Tag.ToString());
-            nMax = 1;
+            nMax = -1;
 
             // 패널에 있는 pic 컨트롤의 최대 수(두번째 자리수)를 구한다.
             for(i = 0; i<pan.Controls.Count;i++)
@@ -186,7 +199,7 @@ namespace Task4_Hanoi
         {
             int i, nMax;
 
-            nMax = 1;
+            nMax = -1;
 
             //패널에 있는 pic 컨트롤의 최대수(두번째 자리 수)를 구한다.
             for(i=0;i<pan.Controls.Count; i++)
@@ -196,7 +209,7 @@ namespace Task4_Hanoi
             }
 
             // 비어있는 panel 이면 true
-            if (nMax == 1) return true;
+            if (nMax == -1) return true;
 
             // 비교값이 컨트롤의 tag값보다 더 작을 때
             // (드래그한 블럭이 더 좁은 블럭이면)
@@ -223,6 +236,7 @@ namespace Task4_Hanoi
 
                 //pic를 만든다.(블럭을 이동시킨다)
                 MakeBlock(pan, nCnt, Convert.ToInt32(m_strDragTag.ToString().Substring(1, 1)), true);
+                
                 m_nMoveCnt += 1;
                 lblCnt.Text = m_nMoveCnt.ToString() + "번";
 
@@ -287,6 +301,21 @@ namespace Task4_Hanoi
             // 게임 종료 검사
             if (isGameEnd(Convert.ToInt32(nudCnt.Value)))
                 MessageBox.Show("게임 끝 !!");
+        }
+
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+            InitHanoi(Convert.ToInt32(nudCnt.Value));
+        }
+
+        private void nudCnt_ValueChanged(object sender, EventArgs e)
+        {
+            InitHanoi(Convert.ToInt32(nudCnt.Value));
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

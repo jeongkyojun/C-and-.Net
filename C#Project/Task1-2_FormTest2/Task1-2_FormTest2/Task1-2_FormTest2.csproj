@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD67ED6E-779C-4460-90D3-E58B974F85C6}</ProjectGuid>
+    <ProjectGuid>{217076AD-E754-4CAE-8BCC-FB51A44D4D79}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Task2_1_Project2_review</RootNamespace>
-    <AssemblyName>Task2_1_Project2_review</AssemblyName>
+    <RootNamespace>Task1_2_FormTest2</RootNamespace>
+    <AssemblyName>Task1-2_FormTest2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmDrive.cs">
+    <Compile Include="FrmParent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDrive.Designer.cs">
-      <DependentUpon>FrmDrive.cs</DependentUpon>
+    <Compile Include="FrmParent.Designer.cs">
+      <DependentUpon>FrmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChild.Designer.cs">
+      <DependentUpon>FrmChild.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmDrive.resx">
-      <DependentUpon>FrmDrive.cs</DependentUpon>
+    <EmbeddedResource Include="FrmChild.resx">
+      <DependentUpon>FrmChild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParent.resx">
+      <DependentUpon>FrmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

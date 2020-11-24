@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Task2_1_Project2_review
+namespace Task1_2_FormTest2
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Task2_1_Project2_review
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmDrive());
+            Application.Run(new FrmParent());
         }
     }
 }

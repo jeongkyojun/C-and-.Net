@@ -81,11 +81,12 @@ namespace Task2_ImgViewer
             String strTmp;
             
             // 선택된 항목의 텍스트와 인덱스를 얻는다.
-            nSel = lstDir.SelectedItems[0].Index;
-            strSelText = lstDir.SelectedItems[0].SubItems[0].Text;
+            nSel = lstDir.SelectedItems[0].Index; // 리스트 뷰 옵션의 위치
+            strSelText = lstDir.SelectedItems[0].SubItems[0].Text; // 클릭한 문구
+
             m_nSelLabel = -1;
             picSelect.Image = null;
-            if (nSel == 0)//위로
+            if (nSel == 0)//위로 -> 맨 위를 눌렀을때
             {
                 int nStart;
                 nStart = lblPath.Text.LastIndexOf("\\");
@@ -95,13 +96,13 @@ namespace Task2_ImgViewer
                 }
                 strTmp = lblPath.Text.Remove(nStart, lblPath.Text.Length - nStart) + "\\";
             }
-            else if (m_nCnt > nSel)
+            else if (m_nCnt > nSel) // C: 나 D: 를 눌렀을때
             {
-                strTmp = strSelText + "\\";
+                strTmp = strSelText + "\\"; // strTmp = C:\ 또는 D:\가 된다.
             }
             else
             {
-                strTmp = lblPath.Text + "\\" + strSelText + "\\";
+                strTmp = lblPath.Text + "\\" + strSelText + "\\"; // 그 외는 추가 경로를 붙여준다.
             }
             // 하위 폴더를 보여준다.
             //MessageBox.Show(strTmp);

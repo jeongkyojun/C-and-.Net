@@ -1,0 +1,11 @@
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\bin\Debug\Task1-2_FormTest2.exe.config
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\bin\Debug\Task1-2_FormTest2.exe
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\bin\Debug\Task1-2_FormTest2.pdb
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1-2_FormTest2.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1_2_FormTest2.FrmChild.resources
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1_2_FormTest2.Properties.Resources.resources
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1-2_FormTest2.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1-2_FormTest2.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1-2_FormTest2.exe
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1-2_FormTest2.pdb
+D:\Git\C#\C#Project\Task1-2_FormTest2\Task1-2_FormTest2\obj\Debug\Task1_2_FormTest2.FrmParent.resources

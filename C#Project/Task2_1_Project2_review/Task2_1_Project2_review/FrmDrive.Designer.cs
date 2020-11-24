@@ -1,6 +1,6 @@
 ﻿namespace Task2_1_Project2_review
 {
-    partial class Form1
+    partial class FrmDrive
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDrive));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.lstDir = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -37,9 +38,11 @@
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "up.bmp");
+            this.imageList1.Images.SetKeyName(1, "drive.bmp");
+            this.imageList1.Images.SetKeyName(2, "folder.bmp");
             // 
             // lstDir
             // 
@@ -70,15 +73,15 @@
             this.lblPath.TabIndex = 1;
             this.lblPath.Text = "label1";
             // 
-            // Form1
+            // FrmDrive
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblPath);
             this.Controls.Add(this.lstDir);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmDrive";
+            this.Text = "Drive";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

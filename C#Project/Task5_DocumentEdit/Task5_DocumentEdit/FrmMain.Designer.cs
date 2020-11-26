@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
             this.treeText = new System.Windows.Forms.TreeView();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtMain = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.imglstTree = new System.Windows.Forms.ImageList(this.components);
             this.fileDlg = new System.Windows.Forms.OpenFileDialog();
             this.saveDlg = new System.Windows.Forms.SaveFileDialog();
@@ -65,6 +66,18 @@
             this.splitContainer1.SplitterDistance = 167;
             this.splitContainer1.TabIndex = 0;
             // 
+            // treeText
+            // 
+            this.treeText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeText.HideSelection = false;
+            this.treeText.ImageIndex = 0;
+            this.treeText.ImageList = this.imglstTree;
+            this.treeText.Location = new System.Drawing.Point(0, 21);
+            this.treeText.Name = "treeText";
+            this.treeText.SelectedImageIndex = 0;
+            this.treeText.Size = new System.Drawing.Size(165, 427);
+            this.treeText.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Control;
@@ -76,13 +89,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "문서목록";
             // 
-            // treeText
+            // txtMain
             // 
-            this.treeText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeText.Location = new System.Drawing.Point(0, 21);
-            this.treeText.Name = "treeText";
-            this.treeText.Size = new System.Drawing.Size(165, 427);
-            this.treeText.TabIndex = 1;
+            this.txtMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMain.HideSelection = false;
+            this.txtMain.Location = new System.Drawing.Point(0, 21);
+            this.txtMain.Name = "txtMain";
+            this.txtMain.Size = new System.Drawing.Size(627, 18);
+            this.txtMain.TabIndex = 1;
             // 
             // label2
             // 
@@ -93,26 +108,24 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(627, 21);
             this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
-            // 
-            // txtMain
-            // 
-            this.txtMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMain.Location = new System.Drawing.Point(0, 21);
-            this.txtMain.Name = "txtMain";
-            this.txtMain.Size = new System.Drawing.Size(627, 18);
-            this.txtMain.TabIndex = 1;
+            this.label2.Text = "이름";
             // 
             // imglstTree
             // 
-            this.imglstTree.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imglstTree.ImageSize = new System.Drawing.Size(16, 16);
+            this.imglstTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTree.ImageStream")));
             this.imglstTree.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTree.Images.SetKeyName(0, "root.bmp");
+            this.imglstTree.Images.SetKeyName(1, "text.bmp");
+            this.imglstTree.Images.SetKeyName(2, "seltext.bmp");
             // 
             // fileDlg
             // 
             this.fileDlg.FileName = "openFileDialog1";
+            this.fileDlg.Filter = "\"txt files (*.txt)|*.txt|All files (*.*)|*.*\"";
+            // 
+            // saveDlg
+            // 
+            this.saveDlg.Filter = "\"txt files (*.txt)|*.txt|All files (*.*)|*.*\"";
             // 
             // FrmMain
             // 
@@ -121,7 +134,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "FrmMain";
-            this.Text = "Form1";
+            this.Text = "FrmMain";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();

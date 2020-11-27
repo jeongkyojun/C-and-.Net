@@ -1,0 +1,7 @@
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.csprojAssemblyReference.cache
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.FrmFind.resources
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.FrmMain.resources
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.FrmReplace.resources
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.Properties.Resources.resources
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.csproj.GenerateResource.cache
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.csproj.CoreCompileInputs.cache

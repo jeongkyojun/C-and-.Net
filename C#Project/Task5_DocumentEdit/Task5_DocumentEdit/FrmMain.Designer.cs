@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeText = new System.Windows.Forms.TreeView();
+            this.imglstTree = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.txtMain = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.imglstTree = new System.Windows.Forms.ImageList(this.components);
             this.fileDlg = new System.Windows.Forms.OpenFileDialog();
             this.saveDlg = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -78,6 +78,14 @@
             this.treeText.Size = new System.Drawing.Size(165, 427);
             this.treeText.TabIndex = 1;
             // 
+            // imglstTree
+            // 
+            this.imglstTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTree.ImageStream")));
+            this.imglstTree.TransparentColor = System.Drawing.Color.Transparent;
+            this.imglstTree.Images.SetKeyName(0, "root.bmp");
+            this.imglstTree.Images.SetKeyName(1, "text.bmp");
+            this.imglstTree.Images.SetKeyName(2, "seltext.bmp");
+            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Control;
@@ -109,14 +117,6 @@
             this.label2.Size = new System.Drawing.Size(627, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "이름";
-            // 
-            // imglstTree
-            // 
-            this.imglstTree.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imglstTree.ImageStream")));
-            this.imglstTree.TransparentColor = System.Drawing.Color.Transparent;
-            this.imglstTree.Images.SetKeyName(0, "root.bmp");
-            this.imglstTree.Images.SetKeyName(1, "text.bmp");
-            this.imglstTree.Images.SetKeyName(2, "seltext.bmp");
             // 
             // fileDlg
             // 

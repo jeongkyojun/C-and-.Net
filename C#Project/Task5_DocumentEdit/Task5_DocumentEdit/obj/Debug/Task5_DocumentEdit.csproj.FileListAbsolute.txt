@@ -5,3 +5,8 @@ D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_Docume
 D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.Properties.Resources.resources
 D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.csproj.GenerateResource.cache
 D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.csproj.CoreCompileInputs.cache
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\bin\Debug\Task5_DocumentEdit.exe.config
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\bin\Debug\Task5_DocumentEdit.exe
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\bin\Debug\Task5_DocumentEdit.pdb
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.exe
+D:\Git\C#\C#Project\Task5_DocumentEdit\Task5_DocumentEdit\obj\Debug\Task5_DocumentEdit.pdb

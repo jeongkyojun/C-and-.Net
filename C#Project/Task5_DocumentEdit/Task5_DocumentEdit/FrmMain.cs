@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections.Specialized;
 
 namespace Task5_DocumentEdit
 {
     public partial class FrmMain : Form
     {
-
+        StringDictionary m_colText = new StringDictionary();
 
         public FrmMain()
         {
@@ -199,5 +200,76 @@ namespace Task5_DocumentEdit
                 saveFile(strTxtPath); // 실제 저장을 한다.
             }
         }
+
+        //프로그램 종료시
+        private void frmMain_FormClosed(object sender, EventArgs e)
+        {
+            int nCnt;
+            int i;
+            String strPath;
+            nCnt = treeText.Nodes[0].GetNodeCount(true);
+
+            // 노드의 갯수만큼 루프를 돌린다.
+            for(i=0;i<nCnt;i++)
+            {
+                strPath = treeText.Nodes[0].Nodes[i].Text;
+                treeText.SelectedNode = treeText.Nodes[0].Nodes[i];
+                if (MessageBox.Show(strPath + "파일을 저장하시겠습니까?", "저장", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    if (strPath.IndexOf("\\") == -1) // '\'를 못찾으면 새로만들기 문서이다.
+                        ResaveFile();
+                    else
+                        saveFile(strPath);
+                }
+            }
+        }
+
+        //<잘라내기>
+        private void menuEditCut_Click(object sender, EventArgs e)
+        {
+            // 클립보드에 선택한 텍스트를 저장시킨다.
+            Clipboard.SetDataObject(txtMain.SelectedText);
+            // 선택한 텍스트를 삭제한다.
+            txtMain.SelectedText = "";
+        }
+
+        //<복사>
+        private void menuEditCopy_Click(object sender, EventArgs e)
+        {
+            // 클립보드에 선택한 텍스트를 저장시킨다.
+            Clipboard.SetDataObject(txtMain.SelectedText);
+        }
+
+        //<삭제>
+        private void menuEditDel_Click(object sender, EventArgs e)
+        {
+            // 선택한 텍스트 삭제
+            txtMain.SelectedText = "";
+        }
+
+        //<붙여넣기>
+        private void menuEditPast_Click(object sender, EventArgs e)
+        {
+            // 텍스트 형식인지 검사 후 붙여 넣는다.
+            if(Clipboard.GetDataObject().GetDataPresent(DataFormats.Text))
+            {
+                txtMain.SelectedText = Clipboard.GetDataObject().GetData(DataFormats.Text, true).ToString();
+            }
+        }
+
+        //<전체선택>
+        private void menuEditAllSel_Click(object sender, EventArgs e)
+        {
+            // 전체 선택
+            txtMain.SelectAll();
+        }
+
+        //<날짜>
+        private void menuEditTime_Click(object sender, EventArgs e)
+        {
+            // 현재 날짜 삽입
+            txtMain.SelectedText = DateTime.Now.ToLongTimeString();
+        }
+
     }
 }

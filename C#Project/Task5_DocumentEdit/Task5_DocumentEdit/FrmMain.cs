@@ -271,5 +271,31 @@ namespace Task5_DocumentEdit
             txtMain.SelectedText = DateTime.Now.ToLongTimeString();
         }
 
+        //<소문자 변환>
+        private void menuEditL_Click(object sender, EventArgs e)
+        {
+            //소문자로
+            txtMain.SelectedText = txtMain.SelectedText.ToLower();
+        }
+
+        //<대문자 변환>
+        private void menuEditU_Click(object sender, EventArgs e)
+        {
+            //대문자로
+            txtMain.SelectedText = txtMain.SelectedText.ToUpper();
+        }
+
+        //<바꾸기>
+        public void menuSearchReplace_Click(object sender, EventArgs e)
+        {
+            if (treeText.SelectedNode == null)
+                return;
+            if ((treeText.SelectedNode) == treeText.Nodes[0])
+                return;
+
+            FrmReplace dlg = new FrmReplace();
+            dlg.Init(this);
+            dlg.Show();
+        }
     }
 }

@@ -37,10 +37,10 @@
             this.btnReplaceAll = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chkCase = new System.Windows.Forms.CheckBox();
-            this.rdoUp = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdoDown = new System.Windows.Forms.RadioButton();
+            this.rdoUp = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -122,6 +122,16 @@
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
+            // chkCase
+            // 
+            this.chkCase.AutoSize = true;
+            this.chkCase.Location = new System.Drawing.Point(6, 17);
+            this.chkCase.Name = "chkCase";
+            this.chkCase.Size = new System.Drawing.Size(130, 19);
+            this.chkCase.TabIndex = 10;
+            this.chkCase.Text = "대/소문자 구분";
+            this.chkCase.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rdoDown);
@@ -133,15 +143,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "방향";
             // 
-            // chkCase
+            // rdoDown
             // 
-            this.chkCase.AutoSize = true;
-            this.chkCase.Location = new System.Drawing.Point(6, 17);
-            this.chkCase.Name = "chkCase";
-            this.chkCase.Size = new System.Drawing.Size(130, 19);
-            this.chkCase.TabIndex = 10;
-            this.chkCase.Text = "대/소문자 구분";
-            this.chkCase.UseVisualStyleBackColor = true;
+            this.rdoDown.AutoSize = true;
+            this.rdoDown.Location = new System.Drawing.Point(182, 16);
+            this.rdoDown.Name = "rdoDown";
+            this.rdoDown.Size = new System.Drawing.Size(73, 19);
+            this.rdoDown.TabIndex = 12;
+            this.rdoDown.TabStop = true;
+            this.rdoDown.Text = "아래쪽";
+            this.rdoDown.UseVisualStyleBackColor = true;
             // 
             // rdoUp
             // 
@@ -153,17 +164,6 @@
             this.rdoUp.TabStop = true;
             this.rdoUp.Text = "위쪽";
             this.rdoUp.UseVisualStyleBackColor = true;
-            // 
-            // rdoDown
-            // 
-            this.rdoDown.AutoSize = true;
-            this.rdoDown.Location = new System.Drawing.Point(182, 16);
-            this.rdoDown.Name = "rdoDown";
-            this.rdoDown.Size = new System.Drawing.Size(73, 19);
-            this.rdoDown.TabIndex = 12;
-            this.rdoDown.TabStop = true;
-            this.rdoDown.Text = "아래쪽";
-            this.rdoDown.UseVisualStyleBackColor = true;
             // 
             // FrmReplace
             // 
@@ -182,6 +182,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmReplace";
             this.Text = "FrmReplace";
+            this.Load += new System.EventHandler(this.FrmReplace_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

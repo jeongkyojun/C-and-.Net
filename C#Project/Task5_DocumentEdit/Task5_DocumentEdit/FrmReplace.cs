@@ -12,9 +12,22 @@ namespace Task5_DocumentEdit
 {
     public partial class FrmReplace : Form
     {
+        FrmMain m_parentDlg;
         public FrmReplace()
         {
             InitializeComponent();
         }
+
+        private void FrmReplace_Load(object sender, EventArgs e)
+        {
+
+        }
+        public void Init(FrmMain parentDlg)
+        {
+            m_parentDlg = parentDlg;
+            rdoDown.Checked = true;
+        }
+
+        
     }
 }

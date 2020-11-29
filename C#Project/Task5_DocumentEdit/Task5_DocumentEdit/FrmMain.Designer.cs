@@ -45,11 +45,6 @@
             this.MenuEditCut = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuEditCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuEditPast = new System.Windows.Forms.ToolStripMenuItem();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.treeText = new System.Windows.Forms.TreeView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMain = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.삭제LToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuEditAll = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +55,11 @@
             this.MenuSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuSearchFind = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuSearchReplace = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.treeText = new System.Windows.Forms.TreeView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMain = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -183,6 +183,72 @@
             this.MenuEditPast.Size = new System.Drawing.Size(228, 26);
             this.MenuEditPast.Text = "붙여넣기(&P)";
             // 
+            // 삭제LToolStripMenuItem
+            // 
+            this.삭제LToolStripMenuItem.Name = "삭제LToolStripMenuItem";
+            this.삭제LToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
+            this.삭제LToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.삭제LToolStripMenuItem.Text = "삭제(&L)";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(225, 6);
+            // 
+            // MenuEditAll
+            // 
+            this.MenuEditAll.Name = "MenuEditAll";
+            this.MenuEditAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.MenuEditAll.Size = new System.Drawing.Size(228, 26);
+            this.MenuEditAll.Text = "전체선택(&A)";
+            // 
+            // MenuEditTime
+            // 
+            this.MenuEditTime.Name = "MenuEditTime";
+            this.MenuEditTime.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            this.MenuEditTime.Size = new System.Drawing.Size(228, 26);
+            this.MenuEditTime.Text = "시간/날짜(&D)";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(225, 6);
+            // 
+            // MenuEditDown
+            // 
+            this.MenuEditDown.Name = "MenuEditDown";
+            this.MenuEditDown.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
+            this.MenuEditDown.Size = new System.Drawing.Size(228, 26);
+            this.MenuEditDown.Text = "소문자로(&K)";
+            // 
+            // MenuEditUp
+            // 
+            this.MenuEditUp.Name = "MenuEditUp";
+            this.MenuEditUp.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
+            this.MenuEditUp.Size = new System.Drawing.Size(228, 26);
+            this.MenuEditUp.Text = "대문자로(&U)";
+            // 
+            // MenuSearch
+            // 
+            this.MenuSearch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuSearchFind,
+            this.MenuSearchReplace});
+            this.MenuSearch.Name = "MenuSearch";
+            this.MenuSearch.Size = new System.Drawing.Size(71, 24);
+            this.MenuSearch.Text = "찾기(&S)";
+            // 
+            // MenuSearchFind
+            // 
+            this.MenuSearchFind.Name = "MenuSearchFind";
+            this.MenuSearchFind.Size = new System.Drawing.Size(155, 26);
+            this.MenuSearchFind.Text = "찾기(&F)";
+            // 
+            // MenuSearchReplace
+            // 
+            this.MenuSearchReplace.Name = "MenuSearchReplace";
+            this.MenuSearchReplace.Size = new System.Drawing.Size(155, 26);
+            this.MenuSearchReplace.Text = "바꾸기(&S)";
+            // 
             // splitContainer1
             // 
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -248,72 +314,6 @@
             this.label2.Size = new System.Drawing.Size(627, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "이름";
-            // 
-            // 삭제LToolStripMenuItem
-            // 
-            this.삭제LToolStripMenuItem.Name = "삭제LToolStripMenuItem";
-            this.삭제LToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.삭제LToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
-            this.삭제LToolStripMenuItem.Text = "삭제(&L)";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(225, 6);
-            // 
-            // MenuEditAll
-            // 
-            this.MenuEditAll.Name = "MenuEditAll";
-            this.MenuEditAll.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.MenuEditAll.Size = new System.Drawing.Size(228, 26);
-            this.MenuEditAll.Text = "전체선택(&A)";
-            // 
-            // MenuEditTime
-            // 
-            this.MenuEditTime.Name = "MenuEditTime";
-            this.MenuEditTime.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.MenuEditTime.Size = new System.Drawing.Size(228, 26);
-            this.MenuEditTime.Text = "시간/날짜(&D)";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(225, 6);
-            // 
-            // MenuEditDown
-            // 
-            this.MenuEditDown.Name = "MenuEditDown";
-            this.MenuEditDown.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
-            this.MenuEditDown.Size = new System.Drawing.Size(228, 26);
-            this.MenuEditDown.Text = "소문자로(&K)";
-            // 
-            // MenuEditUp
-            // 
-            this.MenuEditUp.Name = "MenuEditUp";
-            this.MenuEditUp.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.MenuEditUp.Size = new System.Drawing.Size(228, 26);
-            this.MenuEditUp.Text = "대문자로(&U)";
-            // 
-            // MenuSearch
-            // 
-            this.MenuSearch.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuSearchFind,
-            this.MenuSearchReplace});
-            this.MenuSearch.Name = "MenuSearch";
-            this.MenuSearch.Size = new System.Drawing.Size(71, 24);
-            this.MenuSearch.Text = "찾기(&S)";
-            // 
-            // MenuSearchFind
-            // 
-            this.MenuSearchFind.Name = "MenuSearchFind";
-            this.MenuSearchFind.Size = new System.Drawing.Size(224, 26);
-            this.MenuSearchFind.Text = "찾기(&F)";
-            // 
-            // MenuSearchReplace
-            // 
-            this.MenuSearchReplace.Name = "MenuSearchReplace";
-            this.MenuSearchReplace.Size = new System.Drawing.Size(224, 26);
-            this.MenuSearchReplace.Text = "바꾸기(&S)";
             // 
             // FrmMain
             // 

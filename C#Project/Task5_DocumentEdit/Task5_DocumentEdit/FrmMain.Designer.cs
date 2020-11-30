@@ -353,7 +353,6 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeText;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMain;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem MenuEdit;
         private System.Windows.Forms.ToolStripMenuItem MenuEditCut;
@@ -369,6 +368,7 @@
         private System.Windows.Forms.ToolStripMenuItem MenuSearch;
         private System.Windows.Forms.ToolStripMenuItem MenuSearchFind;
         private System.Windows.Forms.ToolStripMenuItem MenuSearchReplace;
+        public System.Windows.Forms.TextBox txtMain;
     }
 }
 

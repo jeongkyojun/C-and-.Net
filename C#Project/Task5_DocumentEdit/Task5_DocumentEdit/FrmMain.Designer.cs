@@ -33,7 +33,7 @@
             this.imglstTree = new System.Windows.Forms.ImageList(this.components);
             this.fileDlg = new System.Windows.Forms.OpenFileDialog();
             this.saveDlg = new System.Windows.Forms.SaveFileDialog();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MainMenu1 = new System.Windows.Forms.MenuStrip();
             this.MenuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuFileNew = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuFileOpen = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +60,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtMain = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
+            this.MainMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -84,18 +84,18 @@
             // 
             this.saveDlg.Filter = "\"txt files (*.txt)|*.txt|All files (*.*)|*.*\"";
             // 
-            // menuStrip1
+            // MainMenu1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MainMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.MainMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuFile,
             this.MenuEdit,
             this.MenuSearch});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MainMenu1.Location = new System.Drawing.Point(0, 0);
+            this.MainMenu1.Name = "MainMenu1";
+            this.MainMenu1.Size = new System.Drawing.Size(800, 28);
+            this.MainMenu1.TabIndex = 0;
+            this.MainMenu1.Text = "menuStrip1";
             // 
             // MenuFile
             // 
@@ -115,24 +115,28 @@
             this.MenuFileNew.Name = "MenuFileNew";
             this.MenuFileNew.Size = new System.Drawing.Size(242, 26);
             this.MenuFileNew.Text = "새로 만들기(&N)";
+            this.MenuFileNew.Click += new System.EventHandler(this.menuFileNew_Click);
             // 
             // MenuFileOpen
             // 
             this.MenuFileOpen.Name = "MenuFileOpen";
             this.MenuFileOpen.Size = new System.Drawing.Size(242, 26);
             this.MenuFileOpen.Text = "열기(&O)";
+            this.MenuFileOpen.Click += new System.EventHandler(this.menuFileOpen_Click);
             // 
             // MenuFileSave
             // 
             this.MenuFileSave.Name = "MenuFileSave";
             this.MenuFileSave.Size = new System.Drawing.Size(242, 26);
             this.MenuFileSave.Text = "저장(&S)";
+            this.MenuFileSave.Click += new System.EventHandler(this.menuFileSave_Click);
             // 
             // MenuFileResave
             // 
             this.MenuFileResave.Name = "MenuFileResave";
             this.MenuFileResave.Size = new System.Drawing.Size(242, 26);
             this.MenuFileResave.Text = "다른 이름으로 저장(&A)";
+            this.MenuFileResave.Click += new System.EventHandler(this.menuFileResave_Click);
             // 
             // 구분선ToolStripMenuItem
             // 
@@ -144,6 +148,7 @@
             this.MenuFileEnd.Name = "MenuFileEnd";
             this.MenuFileEnd.Size = new System.Drawing.Size(242, 26);
             this.MenuFileEnd.Text = "종료(&E)";
+            this.MenuFileEnd.Click += new System.EventHandler(this.frmMain_FormClosed);
             // 
             // MenuEdit
             // 
@@ -240,14 +245,15 @@
             // MenuSearchFind
             // 
             this.MenuSearchFind.Name = "MenuSearchFind";
-            this.MenuSearchFind.Size = new System.Drawing.Size(155, 26);
+            this.MenuSearchFind.Size = new System.Drawing.Size(224, 26);
             this.MenuSearchFind.Text = "찾기(&F)";
             // 
             // MenuSearchReplace
             // 
             this.MenuSearchReplace.Name = "MenuSearchReplace";
-            this.MenuSearchReplace.Size = new System.Drawing.Size(155, 26);
+            this.MenuSearchReplace.Size = new System.Drawing.Size(224, 26);
             this.MenuSearchReplace.Text = "바꾸기(&S)";
+            this.MenuSearchReplace.Click += new System.EventHandler(this.menuSearchReplace_Click);
             // 
             // splitContainer1
             // 
@@ -282,6 +288,8 @@
             this.treeText.SelectedImageIndex = 0;
             this.treeText.Size = new System.Drawing.Size(165, 399);
             this.treeText.TabIndex = 1;
+            this.treeText.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeText_BeforeSelect);
+            this.treeText.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeText_AfterSelect);
             // 
             // label1
             // 
@@ -296,13 +304,15 @@
             // 
             // txtMain
             // 
-            this.txtMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMain.HideSelection = false;
             this.txtMain.Location = new System.Drawing.Point(0, 21);
+            this.txtMain.Multiline = true;
             this.txtMain.Name = "txtMain";
-            this.txtMain.Size = new System.Drawing.Size(627, 18);
-            this.txtMain.TabIndex = 1;
+            this.txtMain.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtMain.Size = new System.Drawing.Size(627, 399);
+            this.txtMain.TabIndex = 4;
+            this.txtMain.WordWrap = false;
             // 
             // label2
             // 
@@ -321,13 +331,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MainMenu1);
+            this.MainMenuStrip = this.MainMenu1;
             this.Name = "FrmMain";
             this.Text = "FrmMain";
             this.Load += new System.EventHandler(this.FrmMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MainMenu1.ResumeLayout(false);
+            this.MainMenu1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
@@ -342,7 +352,7 @@
         private System.Windows.Forms.ImageList imglstTree;
         private System.Windows.Forms.OpenFileDialog fileDlg;
         private System.Windows.Forms.SaveFileDialog saveDlg;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MainMenu1;
         private System.Windows.Forms.ToolStripMenuItem MenuFile;
         private System.Windows.Forms.ToolStripMenuItem MenuFileNew;
         private System.Windows.Forms.ToolStripMenuItem MenuFileOpen;
@@ -368,7 +378,7 @@
         private System.Windows.Forms.ToolStripMenuItem MenuSearch;
         private System.Windows.Forms.ToolStripMenuItem MenuSearchFind;
         private System.Windows.Forms.ToolStripMenuItem MenuSearchReplace;
-        public System.Windows.Forms.TextBox txtMain;
+        internal System.Windows.Forms.TextBox txtMain;
     }
 }
 

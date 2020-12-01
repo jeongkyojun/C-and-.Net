@@ -22,7 +22,8 @@ namespace Task5_DocumentEdit
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-
+            treeText.Nodes.Add(new TreeNode("문서목록", 0, 0));
+            txtMain.Enabled = false;
         }
 
         private void menuFileNew_Click(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace Task5_DocumentEdit
         }
 
         //<열기>
-        private  void menuFileOpen_Click(object sender, System.EventArgs e)
+        private void menuFileOpen_Click(object sender, System.EventArgs e)
         {
             String strTxtPath;
             String strText;
@@ -294,6 +295,19 @@ namespace Task5_DocumentEdit
                 return;
 
             FrmReplace dlg = new FrmReplace();
+            dlg.Init(this);
+            dlg.Show();
+        }
+
+        //<찾기>
+        public void menuSearchFind_Click(object sender, EventArgs e)
+        {
+            if (treeText.SelectedNode == null)
+                return;
+            if ((treeText.SelectedNode) == treeText.Nodes[0])
+                return;
+
+            FrmFind dlg = new FrmFind();
             dlg.Init(this);
             dlg.Show();
         }

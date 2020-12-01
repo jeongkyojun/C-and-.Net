@@ -18,10 +18,12 @@ namespace Task5_DocumentEdit
             InitializeComponent();
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
+        public void Init(FrmMain parentDlg)
         {
-
+            m_parentDlg = parentDlg;
+            rdoDown.Checked = true;
         }
+
         //찾기
         private bool FindText()
         {

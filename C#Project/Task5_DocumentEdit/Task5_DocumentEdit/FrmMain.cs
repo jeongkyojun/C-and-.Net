@@ -74,7 +74,7 @@ namespace Task5_DocumentEdit
         {
             System.IO.FileStream fileTxt;
             // 기본 인코딩 타입 얻기
-            System.Text.Encoding enc = System.Text.Encoding.Default;
+            System.Text.Encoding enc = System.Text.Encoding.UTF8;
 
             // 파일 오픈
             fileTxt = System.IO.File.Open(strPath, System.IO.FileMode.Open);

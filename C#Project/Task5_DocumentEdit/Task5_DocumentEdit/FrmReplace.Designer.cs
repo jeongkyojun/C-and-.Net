@@ -85,6 +85,7 @@
             this.btnFind.TabIndex = 4;
             this.btnFind.Text = "다음 찾기";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // btnReplace
             // 
@@ -94,6 +95,7 @@
             this.btnReplace.TabIndex = 5;
             this.btnReplace.Text = "바꾸기";
             this.btnReplace.UseVisualStyleBackColor = true;
+            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
             // 
             // btnReplaceAll
             // 
@@ -103,6 +105,7 @@
             this.btnReplaceAll.TabIndex = 6;
             this.btnReplaceAll.Text = "모두바꾸기";
             this.btnReplaceAll.UseVisualStyleBackColor = true;
+            this.btnReplaceAll.Click += new System.EventHandler(this.btnReplaceAll_Click);
             // 
             // btnCancel
             // 
@@ -112,6 +115,7 @@
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "취소";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupBox1
             // 

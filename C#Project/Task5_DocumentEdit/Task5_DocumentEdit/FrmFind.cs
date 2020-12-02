@@ -56,7 +56,9 @@ namespace Task5_DocumentEdit
                 nFind = strTmpTxt.IndexOf(strTmpFind, m_parentDlg.txtMain.SelectionStart + m_parentDlg.txtMain.SelectionLength);
 
             if (nFind == -1)
+            {
                 return false;
+            }
             else// 찾은 문자열을 하이라이트(선택표시) 한다.
             {
                 m_parentDlg.txtMain.SelectionStart = nFind;
@@ -64,6 +66,17 @@ namespace Task5_DocumentEdit
                 m_parentDlg.txtMain.Focus();
                 return true;
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            if (!FindText())
+                MessageBox.Show("탐색이 끝났습니다.");
         }
     }
 }

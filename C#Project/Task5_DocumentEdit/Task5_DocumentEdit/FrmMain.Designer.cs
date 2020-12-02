@@ -239,18 +239,22 @@
             this.MenuSearchFind,
             this.MenuSearchReplace});
             this.MenuSearch.Name = "MenuSearch";
+            this.MenuSearch.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.MenuSearch.Size = new System.Drawing.Size(71, 24);
             this.MenuSearch.Text = "찾기(&S)";
             // 
             // MenuSearchFind
             // 
             this.MenuSearchFind.Name = "MenuSearchFind";
+            this.MenuSearchFind.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.MenuSearchFind.Size = new System.Drawing.Size(224, 26);
             this.MenuSearchFind.Text = "찾기(&F)";
+            this.MenuSearchFind.Click += new System.EventHandler(this.menuSearchFind_Click);
             // 
             // MenuSearchReplace
             // 
             this.MenuSearchReplace.Name = "MenuSearchReplace";
+            this.MenuSearchReplace.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.MenuSearchReplace.Size = new System.Drawing.Size(224, 26);
             this.MenuSearchReplace.Text = "바꾸기(&S)";
             this.MenuSearchReplace.Click += new System.EventHandler(this.menuSearchReplace_Click);

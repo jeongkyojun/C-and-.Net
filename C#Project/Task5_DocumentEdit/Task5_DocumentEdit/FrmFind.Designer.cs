@@ -101,6 +101,7 @@
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "취소";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnFind
             // 
@@ -110,6 +111,7 @@
             this.btnFind.TabIndex = 14;
             this.btnFind.Text = "다음 찾기";
             this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // txtFind
             // 

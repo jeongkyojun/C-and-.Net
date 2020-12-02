@@ -59,7 +59,9 @@ namespace Task5_DocumentEdit
                 nFind = strTmpTxt.IndexOf(strTmpFind, m_parentDlg.txtMain.SelectionStart + m_parentDlg.txtMain.SelectionLength);
 
             if (nFind == -1)
+            {
                 return false;
+            }
             else// 찾은 문자열을 하이라이트(선택표시) 한다.
             {
                 m_parentDlg.txtMain.SelectionStart = nFind;
@@ -71,18 +73,8 @@ namespace Task5_DocumentEdit
 
         private void btnReplace_Click(object sender, EventArgs e)
         {
-            if(!FindText())
-            {
-                MessageBox.Show("탐색이 끝났습니다.");
-            }
-            else
-            {
-                // 찾아진 텍스트를 교체한 후
+            if(FindText())
                 m_parentDlg.txtMain.SelectedText = txtReText.Text;
-                //변경된 텍스트에 선택 효과를 준다.
-                m_parentDlg.txtMain.SelectionStart = m_parentDlg.txtMain.SelectionStart - txtReText.Text.Length;
-                m_parentDlg.txtMain.SelectionLength = txtReText.Text.Length;
-            }
         }
 
         // 모두 바꾸기
@@ -91,6 +83,17 @@ namespace Task5_DocumentEdit
             while (FindText())
                 m_parentDlg.txtMain.SelectedText = txtReText.Text;
             MessageBox.Show("모두 바꿨습니다.");
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            if(!FindText())
+                MessageBox.Show("탐색이 끝났습니다.");
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

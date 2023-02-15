@@ -1,0 +1,7 @@
+D:\Git\C#\Algorithm\Sort\Sort\bin\Debug\Sort.exe.config
+D:\Git\C#\Algorithm\Sort\Sort\bin\Debug\Sort.exe
+D:\Git\C#\Algorithm\Sort\Sort\bin\Debug\Sort.pdb
+D:\Git\C#\Algorithm\Sort\Sort\obj\Debug\Sort.csproj.AssemblyReference.cache
+D:\Git\C#\Algorithm\Sort\Sort\obj\Debug\Sort.csproj.CoreCompileInputs.cache
+D:\Git\C#\Algorithm\Sort\Sort\obj\Debug\Sort.exe
+D:\Git\C#\Algorithm\Sort\Sort\obj\Debug\Sort.pdb
